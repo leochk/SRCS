@@ -1,0 +1,131 @@
+package srcs.workflow.server.distributed;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.LinkedBlockingQueue;
+
+import srcs.workflow.graph.Graph;
+import srcs.workflow.job.Context;
+import srcs.workflow.job.Job;
+import srcs.workflow.job.JobValidator;
+import srcs.workflow.job.LinkFrom;
+import srcs.workflow.job.Task;
+import srcs.workflow.job.ValidationException;
+
+public class JobExecutorMaster implements JobExecutorMasterRemote {
+
+	private Map<Long, Job> workflows = new ConcurrentHashMap<>();
+	private BlockingQueue<String> trackers = new LinkedBlockingQueue<>();
+	private Registry registry = LocateRegistry.getRegistry("localhost");
+
+	private static long cpt = 0;
+
+	public JobExecutorMaster() throws RemoteException {
+
+	}
+
+	@Override
+	public void registerTaskTracker(String name) throws RemoteException {
+		try {
+			trackers.put(name);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public long addJob(Job j) {
+		this.workflows.put(cpt, j);
+		synchronized (this) {
+			return cpt++;
+		}
+	}
+
+	@Override
+	public Map<String, Object> execute(long id) throws RemoteException, NotBoundException {
+		Map<String, Object> res = new HashMap<>();
+
+		try {
+			Job j = workflows.get(id);
+			JobValidator jv;
+			Graph<String> graphTask;
+			Map<String, Object> context;
+
+			jv = new JobValidator(j);
+			graphTask = jv.getTaskGraph();
+			context = j.getContext();
+
+			/* Recherche des tasks "finaux" (i.e, ceux qui n'ont pas de out) */
+			for (String task : graphTask) {
+				if (graphTask.getNeighborsOut(task).size() == 0) {
+					Thread t = new Thread(() -> execMethod(jv.getMethod(task), jv, context, res));
+					t.start();
+					t.join();
+				}
+			}
+		} catch (ValidationException | InterruptedException e) {
+			e.printStackTrace();
+		}
+		return res;
+
+	}
+
+	private Object execMethod(Method m, JobValidator jv, Map<String, Object> context, Map<String, Object> res) {
+		Object invokeRes;
+		Object[] args = new Object[m.getParameterCount()];
+		String idTask = m.getAnnotation(Task.class).value();
+		int i = 0;
+		try {
+			/* Check if we've already computed inputted m */
+			if ((invokeRes = res.get(idTask)) != null)
+				return invokeRes;
+
+			for (Parameter p : m.getParameters()) {
+				String idparam;
+				List<Thread> threads = new ArrayList<>();
+
+				/* LinkFrom case */
+				if (p.isAnnotationPresent(LinkFrom.class)) {
+					idparam = p.getAnnotation(LinkFrom.class).value();
+					final int i_ = i;
+					Thread t = new Thread(() -> args[i_] = execMethod(jv.getMethod(idparam), jv, context, res));
+					threads.add(t);
+					t.start();
+
+				}
+				/* Context case */
+				else {
+					idparam = p.getAnnotation(Context.class).value();
+					args[i] = context.get(idparam);
+				}
+				i++;
+
+				for (Thread t : threads) {
+					t.join();
+				}
+
+			}
+			String tracker = trackers.take();
+			TaskExecutorRemote exec = (TaskExecutorRemote) registry.lookup(tracker);
+			invokeRes = exec.execTask(jv.getJob(), idTask, args);
+			res.put(idTask, invokeRes);
+			trackers.put(tracker);
+			return invokeRes;
+
+		} catch (Exception e) {
+
+		}
+		return null;
+	}
+
+}

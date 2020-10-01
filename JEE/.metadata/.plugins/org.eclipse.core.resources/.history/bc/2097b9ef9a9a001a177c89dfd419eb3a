@@ -1,0 +1,28 @@
+package srcs.workflow.server.central;
+
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+public class JobTrackerCentral {
+    static Registry registry = null;
+    
+	public static void main(String args[]) {
+		new ProcessBuilder().command("killall", "-q", "rmiregistry").start();
+        // sleep pour etre sur que le killall a été executé
+        Thread.sleep(500);
+
+        registry = LocateRegistry.createRegistry(1099);
+
+        SharedVariable<Integer> svc, svr;
+
+        svc = new SharedVariableClassical<>(0);
+        svr = new SharedVariableReliable<>(0);
+
+        UnicastRemoteObject.exportObject(svc, 0);
+        UnicastRemoteObject.exportObject(svr, 0);
+
+        registry.rebind( "variableIntegerClassical" , svc) ;
+        registry.rebind( "variableIntegerReliable" , svr) ;
+	}
+}

@@ -1,0 +1,402 @@
+2016-09-04 23:16:12,893 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: STARTUP_MSG: 
+2016-09-04 23:16:12,903 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-09-04 23:16:13,223 INFO org.apache.hadoop.conf.Configuration: found resource core-site.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/core-site.xml
+2016-09-04 23:16:13,300 INFO org.apache.hadoop.security.Groups: clearing userToGroupsMap cache
+2016-09-04 23:16:13,380 INFO org.apache.hadoop.conf.Configuration: found resource yarn-site.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/yarn-site.xml
+2016-09-04 23:16:13,595 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2016-09-04 23:16:13,685 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2016-09-04 23:16:13,695 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2016-09-04 23:16:13,702 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2016-09-04 23:16:13,747 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2016-09-04 23:16:13,749 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2016-09-04 23:16:13,749 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2016-09-04 23:16:13,776 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2016-09-04 23:16:13,777 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2016-09-04 23:16:13,779 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2016-09-04 23:16:13,781 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2016-09-04 23:16:13,884 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-09-04 23:16:13,997 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-09-04 23:16:13,997 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2016-09-04 23:16:14,040 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2016-09-04 23:16:14,054 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2016-09-04 23:16:14,056 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2016-09-04 23:16:14,058 INFO org.apache.hadoop.yarn.security.YarnAuthorizationProvider: org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instiantiated.
+2016-09-04 23:16:14,059 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2016-09-04 23:16:14,073 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/capacity-scheduler.xml
+2016-09-04 23:16:14,172 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root is undefined
+2016-09-04 23:16:14,172 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root is undefined
+2016-09-04 23:16:14,176 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APP:*ADMINISTER_QUEUE:*, labels=*,
+2016-09-04 23:16:14,176 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2016-09-04 23:16:14,211 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root.default is undefined
+2016-09-04 23:16:14,211 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root.default is undefined
+2016-09-04 23:16:14,213 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+2016-09-04 23:16:14,213 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2016-09-04 23:16:14,214 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2016-09-04 23:16:14,215 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2016-09-04 23:16:14,215 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2016-09-04 23:16:14,217 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2016-09-04 23:16:14,245 INFO org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher: YARN system metrics publishing service is not enabled
+2016-09-04 23:16:14,245 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to active state
+2016-09-04 23:16:14,258 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Updating AMRMToken
+2016-09-04 23:16:14,258 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: Rolling master-key for container-tokens
+2016-09-04 23:16:14,258 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Rolling master-key for nm-tokens
+2016-09-04 23:16:14,258 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-09-04 23:16:14,260 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 1
+2016-09-04 23:16:14,260 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2016-09-04 23:16:14,263 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2016-09-04 23:16:14,263 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-09-04 23:16:14,263 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 2
+2016-09-04 23:16:14,264 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2016-09-04 23:16:14,265 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.nodelabels.event.NodeLabelsStoreEventType for class org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager$ForwardingEventHandler
+2016-09-04 23:16:14,344 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:16:14,371 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8031
+2016-09-04 23:16:14,405 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceTrackerPB to the server
+2016-09-04 23:16:14,405 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:16:14,406 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8031: starting
+2016-09-04 23:16:14,530 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:16:14,542 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8030
+2016-09-04 23:16:14,556 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationMasterProtocolPB to the server
+2016-09-04 23:16:14,567 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:16:14,573 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8030: starting
+2016-09-04 23:16:14,713 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:16:14,718 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8032
+2016-09-04 23:16:14,723 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationClientProtocolPB to the server
+2016-09-04 23:16:14,727 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:16:14,736 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8032: starting
+2016-09-04 23:16:14,768 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to active state
+2016-09-04 23:16:14,916 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-09-04 23:16:14,925 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-09-04 23:16:14,931 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.resourcemanager is not defined
+2016-09-04 23:16:14,941 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-09-04 23:16:14,948 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context cluster
+2016-09-04 23:16:14,948 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context static
+2016-09-04 23:16:14,949 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context logs
+2016-09-04 23:16:14,949 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context cluster
+2016-09-04 23:16:14,950 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-09-04 23:16:14,950 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-09-04 23:16:14,956 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /cluster/*
+2016-09-04 23:16:14,956 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2016-09-04 23:16:15,748 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2016-09-04 23:16:15,757 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8088
+2016-09-04 23:16:15,757 INFO org.mortbay.log: jetty-6.1.26
+2016-09-04 23:16:15,920 INFO org.mortbay.log: Extract jar:file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/share/hadoop/yarn/hadoop-yarn-common-2.7.3.jar!/webapps/cluster to /tmp/Jetty_0_0_0_0_8088_cluster____u0rgz3/webapp
+2016-09-04 23:16:16,234 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-09-04 23:16:16,255 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2016-09-04 23:16:16,255 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-09-04 23:16:18,360 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2016-09-04 23:16:18,360 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app cluster started at 8088
+2016-09-04 23:16:18,467 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:16:18,468 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8033
+2016-09-04 23:16:18,471 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceManagerAdministrationProtocolPB to the server
+2016-09-04 23:16:18,475 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:16:18,478 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8033: starting
+2016-09-04 23:16:19,536 INFO org.apache.hadoop.yarn.util.RackResolver: Resolved vm-ubuntu to /default-rack
+2016-09-04 23:16:19,546 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService: NodeManager from node vm-ubuntu(cmPort: 45592 httpPort: 8042) registered with capability: <memory:8192, vCores:8>, assigned nodeId vm-ubuntu:45592
+2016-09-04 23:16:19,552 INFO org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl: vm-ubuntu:45592 Node Transitioned from NEW to RUNNING
+2016-09-04 23:16:19,560 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Added node vm-ubuntu:45592 clusterResource: <memory:8192, vCores:8>
+2016-09-04 23:16:39,380 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM
+2016-09-04 23:16:39,417 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2016-09-04 23:16:39,421 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2016-09-04 23:16:39,424 INFO org.apache.hadoop.ipc.Server: Stopping server on 8032
+2016-09-04 23:16:39,432 INFO org.apache.hadoop.ipc.Server: Stopping server on 8033
+2016-09-04 23:16:39,436 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8032
+2016-09-04 23:16:39,436 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:16:39,440 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8033
+2016-09-04 23:16:39,442 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:16:39,442 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to standby state
+2016-09-04 23:16:39,443 WARN org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher: org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher$LauncherThread interrupted. Returning.
+2016-09-04 23:16:39,443 INFO org.apache.hadoop.ipc.Server: Stopping server on 8030
+2016-09-04 23:16:39,447 INFO org.apache.hadoop.ipc.Server: Stopping server on 8031
+2016-09-04 23:16:39,448 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8030
+2016-09-04 23:16:39,447 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:16:39,459 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:16:39,459 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8031
+2016-09-04 23:16:39,462 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Returning, interrupted : java.lang.InterruptedException
+2016-09-04 23:16:39,462 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: NMLivelinessMonitor thread interrupted
+2016-09-04 23:16:39,467 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2016-09-04 23:16:39,467 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2016-09-04 23:16:39,467 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2016-09-04 23:16:39,467 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer thread interrupted
+2016-09-04 23:16:39,467 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2016-09-04 23:16:39,468 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping ResourceManager metrics system...
+2016-09-04 23:16:39,475 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system stopped.
+2016-09-04 23:16:39,475 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system shutdown complete.
+2016-09-04 23:16:39,475 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2016-09-04 23:16:39,475 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to standby state
+2016-09-04 23:16:39,475 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: SHUTDOWN_MSG: 
+2016-09-04 23:17:44,013 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: STARTUP_MSG: 
+2016-09-04 23:17:44,025 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-09-04 23:17:44,455 INFO org.apache.hadoop.conf.Configuration: found resource core-site.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/core-site.xml
+2016-09-04 23:17:44,766 INFO org.apache.hadoop.security.Groups: clearing userToGroupsMap cache
+2016-09-04 23:17:44,964 INFO org.apache.hadoop.conf.Configuration: found resource yarn-site.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/yarn-site.xml
+2016-09-04 23:17:45,572 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2016-09-04 23:17:45,704 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2016-09-04 23:17:45,714 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2016-09-04 23:17:45,732 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2016-09-04 23:17:45,838 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2016-09-04 23:17:45,844 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2016-09-04 23:17:45,845 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2016-09-04 23:17:45,898 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2016-09-04 23:17:45,904 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2016-09-04 23:17:45,908 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2016-09-04 23:17:45,912 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2016-09-04 23:17:46,139 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-09-04 23:17:46,494 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-09-04 23:17:46,494 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2016-09-04 23:17:46,542 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2016-09-04 23:17:46,557 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2016-09-04 23:17:46,561 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2016-09-04 23:17:46,565 INFO org.apache.hadoop.yarn.security.YarnAuthorizationProvider: org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instiantiated.
+2016-09-04 23:17:46,566 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2016-09-04 23:17:46,606 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/capacity-scheduler.xml
+2016-09-04 23:17:46,836 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root is undefined
+2016-09-04 23:17:46,836 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root is undefined
+2016-09-04 23:17:46,848 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APP:*ADMINISTER_QUEUE:*, labels=*,
+2016-09-04 23:17:46,849 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2016-09-04 23:17:46,875 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root.default is undefined
+2016-09-04 23:17:46,875 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root.default is undefined
+2016-09-04 23:17:46,880 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+2016-09-04 23:17:46,882 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2016-09-04 23:17:46,885 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2016-09-04 23:17:46,886 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2016-09-04 23:17:46,887 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2016-09-04 23:17:46,887 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2016-09-04 23:17:46,933 INFO org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher: YARN system metrics publishing service is not enabled
+2016-09-04 23:17:46,933 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to active state
+2016-09-04 23:17:46,988 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Updating AMRMToken
+2016-09-04 23:17:46,990 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: Rolling master-key for container-tokens
+2016-09-04 23:17:46,990 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Rolling master-key for nm-tokens
+2016-09-04 23:17:46,991 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-09-04 23:17:46,992 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 1
+2016-09-04 23:17:46,992 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2016-09-04 23:17:47,005 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2016-09-04 23:17:47,005 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-09-04 23:17:47,005 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 2
+2016-09-04 23:17:47,005 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2016-09-04 23:17:47,011 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.nodelabels.event.NodeLabelsStoreEventType for class org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager$ForwardingEventHandler
+2016-09-04 23:17:47,098 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:17:47,123 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8031
+2016-09-04 23:17:47,157 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceTrackerPB to the server
+2016-09-04 23:17:47,157 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:17:47,160 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8031: starting
+2016-09-04 23:17:47,257 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:17:47,272 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8030
+2016-09-04 23:17:47,302 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationMasterProtocolPB to the server
+2016-09-04 23:17:47,303 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:17:47,303 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8030: starting
+2016-09-04 23:17:47,541 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:17:47,542 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8032
+2016-09-04 23:17:47,571 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationClientProtocolPB to the server
+2016-09-04 23:17:47,574 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:17:47,623 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to active state
+2016-09-04 23:17:47,626 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8032: starting
+2016-09-04 23:17:47,877 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-09-04 23:17:47,890 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-09-04 23:17:47,898 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.resourcemanager is not defined
+2016-09-04 23:17:47,913 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-09-04 23:17:47,925 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context cluster
+2016-09-04 23:17:47,925 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context static
+2016-09-04 23:17:47,926 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context logs
+2016-09-04 23:17:47,926 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context cluster
+2016-09-04 23:17:47,928 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-09-04 23:17:47,928 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-09-04 23:17:47,939 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /cluster/*
+2016-09-04 23:17:47,939 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2016-09-04 23:17:48,936 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2016-09-04 23:17:48,943 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8088
+2016-09-04 23:17:48,943 INFO org.mortbay.log: jetty-6.1.26
+2016-09-04 23:17:49,007 INFO org.mortbay.log: Extract jar:file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/share/hadoop/yarn/hadoop-yarn-common-2.7.3.jar!/webapps/cluster to /tmp/Jetty_0_0_0_0_8088_cluster____u0rgz3/webapp
+2016-09-04 23:17:49,665 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-09-04 23:17:49,683 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2016-09-04 23:17:49,683 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-09-04 23:17:52,448 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2016-09-04 23:17:52,448 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app cluster started at 8088
+2016-09-04 23:17:52,561 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:17:52,568 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8033
+2016-09-04 23:17:52,583 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceManagerAdministrationProtocolPB to the server
+2016-09-04 23:17:52,585 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:17:52,586 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8033: starting
+2016-09-04 23:17:52,998 INFO org.apache.hadoop.yarn.util.RackResolver: Resolved vm-ubuntu to /default-rack
+2016-09-04 23:17:53,006 INFO org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl: vm-ubuntu:36172 Node Transitioned from NEW to RUNNING
+2016-09-04 23:17:53,010 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Added node vm-ubuntu:36172 clusterResource: <memory:8192, vCores:8>
+2016-09-04 23:17:53,014 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService: NodeManager from node vm-ubuntu(cmPort: 36172 httpPort: 8042) registered with capability: <memory:8192, vCores:8>, assigned nodeId vm-ubuntu:36172
+2016-09-04 23:18:29,104 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM
+2016-09-04 23:18:29,137 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2016-09-04 23:18:29,140 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2016-09-04 23:18:29,146 INFO org.apache.hadoop.ipc.Server: Stopping server on 8032
+2016-09-04 23:18:29,152 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8032
+2016-09-04 23:18:29,153 INFO org.apache.hadoop.ipc.Server: Stopping server on 8033
+2016-09-04 23:18:29,157 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:18:29,161 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8033
+2016-09-04 23:18:29,164 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to standby state
+2016-09-04 23:18:29,164 WARN org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher: org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher$LauncherThread interrupted. Returning.
+2016-09-04 23:18:29,164 INFO org.apache.hadoop.ipc.Server: Stopping server on 8030
+2016-09-04 23:18:29,168 INFO org.apache.hadoop.ipc.Server: Stopping server on 8031
+2016-09-04 23:18:29,168 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8030
+2016-09-04 23:18:29,171 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:18:29,189 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:18:29,200 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:18:29,172 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8031
+2016-09-04 23:18:29,199 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: NMLivelinessMonitor thread interrupted
+2016-09-04 23:18:29,198 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Returning, interrupted : java.lang.InterruptedException
+2016-09-04 23:18:29,204 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2016-09-04 23:18:29,205 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2016-09-04 23:18:29,205 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer thread interrupted
+2016-09-04 23:18:29,205 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2016-09-04 23:18:29,205 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2016-09-04 23:18:29,205 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping ResourceManager metrics system...
+2016-09-04 23:18:29,211 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system stopped.
+2016-09-04 23:18:29,211 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system shutdown complete.
+2016-09-04 23:18:29,212 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2016-09-04 23:18:29,213 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to standby state
+2016-09-04 23:18:29,213 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: SHUTDOWN_MSG: 
+2016-12-01 16:05:39,628 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: STARTUP_MSG: 
+2016-12-01 16:05:39,661 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-12-01 16:05:40,636 INFO org.apache.hadoop.conf.Configuration: found resource core-site.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/core-site.xml
+2016-12-01 16:05:40,844 INFO org.apache.hadoop.security.Groups: clearing userToGroupsMap cache
+2016-12-01 16:05:41,234 INFO org.apache.hadoop.conf.Configuration: found resource yarn-site.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/yarn-site.xml
+2016-12-01 16:05:41,974 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2016-12-01 16:05:42,186 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2016-12-01 16:05:42,196 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2016-12-01 16:05:42,215 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2016-12-01 16:05:42,301 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2016-12-01 16:05:42,306 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2016-12-01 16:05:42,306 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2016-12-01 16:05:42,360 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2016-12-01 16:05:42,361 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2016-12-01 16:05:42,362 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2016-12-01 16:05:42,366 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2016-12-01 16:05:42,592 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-12-01 16:05:42,881 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-12-01 16:05:42,881 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2016-12-01 16:05:42,919 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2016-12-01 16:05:42,927 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2016-12-01 16:05:42,929 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2016-12-01 16:05:42,932 INFO org.apache.hadoop.yarn.security.YarnAuthorizationProvider: org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instiantiated.
+2016-12-01 16:05:42,934 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2016-12-01 16:05:42,949 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/etc/hadoop/capacity-scheduler.xml
+2016-12-01 16:05:43,082 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root is undefined
+2016-12-01 16:05:43,082 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root is undefined
+2016-12-01 16:05:43,088 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APP:*ADMINISTER_QUEUE:*, labels=*,
+2016-12-01 16:05:43,088 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2016-12-01 16:05:43,098 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root.default is undefined
+2016-12-01 16:05:43,099 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root.default is undefined
+2016-12-01 16:05:43,100 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+2016-12-01 16:05:43,100 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2016-12-01 16:05:43,101 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2016-12-01 16:05:43,102 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2016-12-01 16:05:43,102 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2016-12-01 16:05:43,102 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2016-12-01 16:05:43,189 INFO org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher: YARN system metrics publishing service is not enabled
+2016-12-01 16:05:43,189 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to active state
+2016-12-01 16:05:43,238 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Updating AMRMToken
+2016-12-01 16:05:43,238 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: Rolling master-key for container-tokens
+2016-12-01 16:05:43,239 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Rolling master-key for nm-tokens
+2016-12-01 16:05:43,240 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-12-01 16:05:43,242 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 1
+2016-12-01 16:05:43,242 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2016-12-01 16:05:43,249 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2016-12-01 16:05:43,255 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-12-01 16:05:43,256 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 2
+2016-12-01 16:05:43,256 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2016-12-01 16:05:43,261 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.nodelabels.event.NodeLabelsStoreEventType for class org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager$ForwardingEventHandler
+2016-12-01 16:05:43,328 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-12-01 16:05:43,367 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8031
+2016-12-01 16:05:43,420 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceTrackerPB to the server
+2016-12-01 16:05:43,427 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-12-01 16:05:43,436 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8031: starting
+2016-12-01 16:05:43,636 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-12-01 16:05:43,646 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8030
+2016-12-01 16:05:43,659 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationMasterProtocolPB to the server
+2016-12-01 16:05:43,660 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-12-01 16:05:43,669 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8030: starting
+2016-12-01 16:05:43,829 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-12-01 16:05:43,831 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8032
+2016-12-01 16:05:43,849 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationClientProtocolPB to the server
+2016-12-01 16:05:43,850 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-12-01 16:05:43,850 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8032: starting
+2016-12-01 16:05:43,901 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to active state
+2016-12-01 16:05:44,265 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-12-01 16:05:44,282 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-12-01 16:05:44,302 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.resourcemanager is not defined
+2016-12-01 16:05:44,365 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-12-01 16:05:44,386 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context cluster
+2016-12-01 16:05:44,386 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context static
+2016-12-01 16:05:44,386 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context logs
+2016-12-01 16:05:44,387 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context cluster
+2016-12-01 16:05:44,387 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-12-01 16:05:44,388 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-12-01 16:05:44,397 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /cluster/*
+2016-12-01 16:05:44,397 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2016-12-01 16:05:45,326 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2016-12-01 16:05:45,340 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8088
+2016-12-01 16:05:45,340 INFO org.mortbay.log: jetty-6.1.26
+2016-12-01 16:05:45,411 INFO org.mortbay.log: Extract jar:file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/share/hadoop/yarn/hadoop-yarn-common-2.7.3.jar!/webapps/cluster to /tmp/Jetty_0_0_0_0_8088_cluster____u0rgz3/webapp
+2016-12-01 16:05:46,253 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-12-01 16:05:46,257 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2016-12-01 16:05:46,258 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2016-12-01 16:05:50,061 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2016-12-01 16:05:50,061 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app cluster started at 8088
+2016-12-01 16:05:50,269 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-12-01 16:05:50,276 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8033
+2016-12-01 16:05:50,284 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceManagerAdministrationProtocolPB to the server
+2016-12-01 16:05:50,285 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-12-01 16:05:50,285 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8033: starting
+2016-12-01 16:05:50,420 INFO org.apache.hadoop.yarn.util.RackResolver: Resolved vm-ubuntu to /default-rack
+2016-12-01 16:05:50,425 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService: NodeManager from node vm-ubuntu(cmPort: 41623 httpPort: 8042) registered with capability: <memory:8192, vCores:8>, assigned nodeId vm-ubuntu:41623
+2016-12-01 16:05:50,430 INFO org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl: vm-ubuntu:41623 Node Transitioned from NEW to RUNNING
+2016-12-01 16:05:50,455 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Added node vm-ubuntu:41623 clusterResource: <memory:8192, vCores:8>
+2016-12-01 16:10:26,239 INFO org.apache.hadoop.yarn.server.resourcemanager.ClientRMService: Allocated new applicationId: 1
+2016-12-01 16:10:29,344 INFO org.apache.hadoop.yarn.server.resourcemanager.ClientRMService: Application with id 1 submitted by user jlejeune
+2016-12-01 16:10:29,346 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl: Storing application with id application_1480604743198_0001
+2016-12-01 16:10:29,361 INFO org.apache.hadoop.yarn.server.resourcemanager.RMAuditLogger: USER=jlejeune	IP=127.0.0.1	OPERATION=Submit Application Request	TARGET=ClientRMService	RESULT=SUCCESS	APPID=application_1480604743198_0001
+2016-12-01 16:10:29,365 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl: application_1480604743198_0001 State change from NEW to NEW_SAVING
+2016-12-01 16:10:29,367 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing info for app: application_1480604743198_0001
+2016-12-01 16:10:29,376 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl: application_1480604743198_0001 State change from NEW_SAVING to SUBMITTED
+2016-12-01 16:10:29,390 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Application added - appId: application_1480604743198_0001 user: jlejeune leaf-queue of parent: root #applications: 1
+2016-12-01 16:10:29,398 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Accepted application application_1480604743198_0001 from user: jlejeune, in queue: default
+2016-12-01 16:10:29,537 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl: application_1480604743198_0001 State change from SUBMITTED to ACCEPTED
+2016-12-01 16:10:29,605 INFO org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService: Registering app attempt : appattempt_1480604743198_0001_000001
+2016-12-01 16:10:29,607 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl: appattempt_1480604743198_0001_000001 State change from NEW to SUBMITTED
+2016-12-01 16:10:29,631 WARN org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: maximum-am-resource-percent is insufficient to start a single application in queue, it is likely set too low. skipping enforcement to allow at least one application to start
+2016-12-01 16:10:29,632 WARN org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: maximum-am-resource-percent is insufficient to start a single application in queue for user, it is likely set too low. skipping enforcement to allow at least one application to start
+2016-12-01 16:10:29,632 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Application application_1480604743198_0001 from user: jlejeune activated in queue: default
+2016-12-01 16:10:29,632 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Application added - appId: application_1480604743198_0001 user: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue$User@8585c6c, leaf-queue: default #user-pending-applications: 0 #user-active-applications: 1 #queue-pending-applications: 0 #queue-active-applications: 1
+2016-12-01 16:10:29,633 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Added Application Attempt appattempt_1480604743198_0001_000001 to scheduler from user jlejeune in queue default
+2016-12-01 16:10:29,638 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl: appattempt_1480604743198_0001_000001 State change from SUBMITTED to SCHEDULED
+2016-12-01 16:10:29,733 INFO org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl: container_1480604743198_0001_01_000001 Container Transitioned from NEW to ALLOCATED
+2016-12-01 16:10:29,734 INFO org.apache.hadoop.yarn.server.resourcemanager.RMAuditLogger: USER=jlejeune	OPERATION=AM Allocated Container	TARGET=SchedulerApp	RESULT=SUCCESS	APPID=application_1480604743198_0001	CONTAINERID=container_1480604743198_0001_01_000001
+2016-12-01 16:10:29,735 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerNode: Assigned container container_1480604743198_0001_01_000001 of capacity <memory:2048, vCores:1> on host vm-ubuntu:41623, which has 1 containers, <memory:2048, vCores:1> used and <memory:6144, vCores:7> available after allocation
+2016-12-01 16:10:29,736 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: assignedContainer application attempt=appattempt_1480604743198_0001_000001 container=Container: [ContainerId: container_1480604743198_0001_01_000001, NodeId: vm-ubuntu:41623, NodeHttpAddress: vm-ubuntu:8042, Resource: <memory:2048, vCores:1>, Priority: 0, Token: null, ] queue=default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=1, numContainers=0 clusterResource=<memory:8192, vCores:8> type=OFF_SWITCH
+2016-12-01 16:10:29,737 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Re-sorting assigned queue: root.default stats: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:2048, vCores:1>, usedCapacity=0.25, absoluteUsedCapacity=0.25, numApps=1, numContainers=1
+2016-12-01 16:10:29,738 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: assignedContainer queue=root usedCapacity=0.25 absoluteUsedCapacity=0.25 used=<memory:2048, vCores:1> cluster=<memory:8192, vCores:8>
+2016-12-01 16:10:29,799 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Sending NMToken for nodeId : vm-ubuntu:41623 for container : container_1480604743198_0001_01_000001
+2016-12-01 16:10:29,817 INFO org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl: container_1480604743198_0001_01_000001 Container Transitioned from ALLOCATED to ACQUIRED
+2016-12-01 16:10:29,818 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Clear node set for appattempt_1480604743198_0001_000001
+2016-12-01 16:10:29,823 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl: Storing attempt: AppId: application_1480604743198_0001 AttemptId: appattempt_1480604743198_0001_000001 MasterContainer: Container: [ContainerId: container_1480604743198_0001_01_000001, NodeId: vm-ubuntu:41623, NodeHttpAddress: vm-ubuntu:8042, Resource: <memory:2048, vCores:1>, Priority: 0, Token: Token { kind: ContainerToken, service: 127.0.1.1:41623 }, ]
+2016-12-01 16:10:29,849 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl: appattempt_1480604743198_0001_000001 State change from SCHEDULED to ALLOCATED_SAVING
+2016-12-01 16:10:29,867 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl: appattempt_1480604743198_0001_000001 State change from ALLOCATED_SAVING to ALLOCATED
+2016-12-01 16:10:29,917 INFO org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher: Launching masterappattempt_1480604743198_0001_000001
+2016-12-01 16:10:30,104 INFO org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher: Setting up container Container: [ContainerId: container_1480604743198_0001_01_000001, NodeId: vm-ubuntu:41623, NodeHttpAddress: vm-ubuntu:8042, Resource: <memory:2048, vCores:1>, Priority: 0, Token: Token { kind: ContainerToken, service: 127.0.1.1:41623 }, ] for AM appattempt_1480604743198_0001_000001
+2016-12-01 16:10:30,109 INFO org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher: Command to launch container container_1480604743198_0001_01_000001 : $JAVA_HOME/bin/java -Djava.io.tmpdir=$PWD/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA -Dhadoop.root.logfile=syslog  -Xmx1024m org.apache.hadoop.mapreduce.v2.app.MRAppMaster 1><LOG_DIR>/stdout 2><LOG_DIR>/stderr 
+2016-12-01 16:10:30,142 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: Create AMRMToken for ApplicationAttempt: appattempt_1480604743198_0001_000001
+2016-12-01 16:10:30,155 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: Creating password for appattempt_1480604743198_0001_000001
+2016-12-01 16:10:31,166 INFO org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher: Done launching container Container: [ContainerId: container_1480604743198_0001_01_000001, NodeId: vm-ubuntu:41623, NodeHttpAddress: vm-ubuntu:8042, Resource: <memory:2048, vCores:1>, Priority: 0, Token: Token { kind: ContainerToken, service: 127.0.1.1:41623 }, ] for AM appattempt_1480604743198_0001_000001
+2016-12-01 16:10:31,166 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl: appattempt_1480604743198_0001_000001 State change from ALLOCATED to LAUNCHED
+2016-12-01 16:10:31,657 INFO org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl: container_1480604743198_0001_01_000001 Container Transitioned from ACQUIRED to RUNNING
+2016-12-01 16:10:58,554 INFO SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for appattempt_1480604743198_0001_000001 (auth:SIMPLE)
+2016-12-01 16:10:58,594 INFO org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService: AM registration appattempt_1480604743198_0001_000001
+2016-12-01 16:10:58,596 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl: appattempt_1480604743198_0001_000001 State change from LAUNCHED to RUNNING
+2016-12-01 16:10:58,596 INFO org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl: application_1480604743198_0001 State change from ACCEPTED to RUNNING
+2016-12-01 16:10:58,596 INFO org.apache.hadoop.yarn.server.resourcemanager.RMAuditLogger: USER=jlejeune	IP=127.0.0.1	OPERATION=Register App Master	TARGET=ApplicationMasterService	RESULT=SUCCESS	APPID=application_1480604743198_0001	APPATTEMPTID=appattempt_1480604743198_0001_000001
+2016-12-01 16:11:00,806 INFO org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl: container_1480604743198_0001_01_000002 Container Transitioned from NEW to ALLOCATED
+2016-12-01 16:11:00,806 INFO org.apache.hadoop.yarn.server.resourcemanager.RMAuditLogger: USER=jlejeune	OPERATION=AM Allocated Container	TARGET=SchedulerApp	RESULT=SUCCESS	APPID=application_1480604743198_0001	CONTAINERID=container_1480604743198_0001_01_000002
+2016-12-01 16:11:00,807 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerNode: Assigned container container_1480604743198_0001_01_000002 of capacity <memory:1024, vCores:1> on host vm-ubuntu:41623, which has 2 containers, <memory:3072, vCores:2> used and <memory:5120, vCores:6> available after allocation
+2016-12-01 16:11:00,807 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: assignedContainer application attempt=appattempt_1480604743198_0001_000001 container=Container: [ContainerId: container_1480604743198_0001_01_000002, NodeId: vm-ubuntu:41623, NodeHttpAddress: vm-ubuntu:8042, Resource: <memory:1024, vCores:1>, Priority: 20, Token: null, ] queue=default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:2048, vCores:1>, usedCapacity=0.25, absoluteUsedCapacity=0.25, numApps=1, numContainers=1 clusterResource=<memory:8192, vCores:8> type=NODE_LOCAL
+2016-12-01 16:11:00,807 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Re-sorting assigned queue: root.default stats: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:3072, vCores:2>, usedCapacity=0.375, absoluteUsedCapacity=0.375, numApps=1, numContainers=2
+2016-12-01 16:11:00,809 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: assignedContainer queue=root usedCapacity=0.375 absoluteUsedCapacity=0.375 used=<memory:3072, vCores:2> cluster=<memory:8192, vCores:8>
+2016-12-01 16:11:01,117 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Sending NMToken for nodeId : vm-ubuntu:41623 for container : container_1480604743198_0001_01_000002
+2016-12-01 16:11:01,119 INFO org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl: container_1480604743198_0001_01_000002 Container Transitioned from ALLOCATED to ACQUIRED
+2016-12-01 16:11:01,815 INFO org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl: container_1480604743198_0001_01_000002 Container Transitioned from ACQUIRED to RUNNING
+2016-12-01 16:11:02,152 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo: checking for deactivate of application :application_1480604743198_0001
+2016-12-01 16:11:32,162 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM

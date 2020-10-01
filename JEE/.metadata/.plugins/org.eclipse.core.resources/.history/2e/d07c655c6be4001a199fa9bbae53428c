@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Main {
+
+	private static final int	MAX_NUMERO	= 5;
+	private static final int	MAX_ETOILE	= 2;
+
+	public static void main(String[] args) {
+
+		List<Integer>	numeros		= new ArrayList<>();
+		List<Integer>	etoiles		= new ArrayList<>();
+		List<Integer>	mesnumeros	= new ArrayList<>();
+		List<Integer>	mestoiles	= new ArrayList<>();
+		Random			r			= new Random();
+		Integer			n;
+		int i;
+		
+		for (i = 0; i < MAX_NUMERO; i++) {
+			n = r.nextInt();
+			if (numeros.contains(n)) i--; else numeros.add(n);
+			
+			numeros.contains(n) == True ? continue : break;
+		}
+
+	}
+
+}

@@ -1,0 +1,74 @@
+Thu May 07 14:18:16 CEST 2020 : Le gestionnaire de sécurité a été installé à l'aide de la stratégie de sécurité de serveur de base.
+Thu May 07 14:18:16 CEST 2020 : Apache Derby Network Server - 10.13.1.1 - (Unversioned directory) démarré et prêt à accepter les connexions sur le port 1527
+Thu May 07 14:18:16 CEST 2020 : Apache Derby Network Server - 10.13.1.1 - (Unversioned directory) démarré et prêt à accepter les connexions sur le port 1527
+----------------------------------------------------------------
+Thu May 07 14:18:31 CEST 2020:
+Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (Unversioned directory) : instance a816c00e-0171-ef12-740a-00002d995f97 
+dans le répertoire de base de données /home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/sample avec le chargeur de classe sun.misc.Launcher$AppClassLoader@74a14482
+Chargé de file:/home/check-leo/a_SAR_S2/SRCS/glassfish5/javadb/lib/derby.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_252-8u252-b09-1~18.04-b09
+user.dir=/home/check-leo
+os.name=Linux
+os.arch=amd64
+os.version=5.3.0-51-generic
+derby.system.home=/home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/
+Chargeur de classe de la base de données démarré - derby.database.classpath = ''
+----------------------------------------------------------------
+Thu May 07 14:19:59 CEST 2020:
+Fermeture de l'instance a816c00e-0171-ef12-740a-00002d995f97 sur le répertoire de base de données /home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/sample avec le chargeur de classe sun.misc.Launcher$AppClassLoader@74a14482 
+Thu May 07 14:19:59 CEST 2020 Thread[DRDAConnThread_10,5,main] (DATABASE = sample), (DRDAID = {11}), Arrêt de la base de données 'sample'.
+----------------------------------------------------------------
+Thu May 07 14:20:00 CEST 2020:
+Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (Unversioned directory) : instance 89e800c0-0171-ef12-740a-00002d995f97 
+dans le répertoire de base de données /home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/sample avec le chargeur de classe sun.misc.Launcher$AppClassLoader@74a14482
+Chargé de file:/home/check-leo/a_SAR_S2/SRCS/glassfish5/javadb/lib/derby.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_252-8u252-b09-1~18.04-b09
+user.dir=/home/check-leo
+os.name=Linux
+os.arch=amd64
+os.version=5.3.0-51-generic
+derby.system.home=/home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/
+Chargeur de classe de la base de données démarré - derby.database.classpath = ''
+----------------------------------------------------------------
+Thu May 07 14:50:43 CEST 2020:
+Fermeture de l'instance 89e800c0-0171-ef12-740a-00002d995f97 sur le répertoire de base de données /home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/sample avec le chargeur de classe sun.misc.Launcher$AppClassLoader@74a14482 
+Thu May 07 14:50:43 CEST 2020 Thread[DRDAConnThread_6,5,main] (DATABASE = sample), (DRDAID = {44}), Arrêt de la base de données 'sample'.
+Fri May 08 12:47:00 CEST 2020 : Le gestionnaire de sécurité a été installé à l'aide de la stratégie de sécurité de serveur de base.
+Fri May 08 12:47:00 CEST 2020 : Apache Derby Network Server - 10.13.1.1 - (Unversioned directory) démarré et prêt à accepter les connexions sur le port 1527
+Fri May 08 12:47:00 CEST 2020 : Apache Derby Network Server - 10.13.1.1 - (Unversioned directory) démarré et prêt à accepter les connexions sur le port 1527
+----------------------------------------------------------------
+Fri May 08 12:47:13 CEST 2020:
+Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (Unversioned directory) : instance a816c00e-0171-f3e5-413f-00002d995f97 
+dans le répertoire de base de données /home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/sample avec le chargeur de classe sun.misc.Launcher$AppClassLoader@74a14482
+Chargé de file:/home/check-leo/a_SAR_S2/SRCS/glassfish5/javadb/lib/derby.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_252-8u252-b09-1~18.04-b09
+user.dir=/home/check-leo
+os.name=Linux
+os.arch=amd64
+os.version=5.3.0-51-generic
+derby.system.home=/home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/
+Chargeur de classe de la base de données démarré - derby.database.classpath = ''
+----------------------------------------------------------------
+Fri May 08 12:49:48 CEST 2020:
+Fermeture de l'instance a816c00e-0171-f3e5-413f-00002d995f97 sur le répertoire de base de données /home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/sample avec le chargeur de classe sun.misc.Launcher$AppClassLoader@74a14482 
+Fri May 08 12:49:48 CEST 2020 Thread[DRDAConnThread_11,5,main] (DATABASE = sample), (DRDAID = {12}), Arrêt de la base de données 'sample'.
+----------------------------------------------------------------
+Fri May 08 12:49:48 CEST 2020:
+Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (Unversioned directory) : instance c99d403a-0171-f3e5-413f-00002d995f97 
+dans le répertoire de base de données /home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/sample avec le chargeur de classe sun.misc.Launcher$AppClassLoader@74a14482
+Chargé de file:/home/check-leo/a_SAR_S2/SRCS/glassfish5/javadb/lib/derby.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_252-8u252-b09-1~18.04-b09
+user.dir=/home/check-leo
+os.name=Linux
+os.arch=amd64
+os.version=5.3.0-51-generic
+derby.system.home=/home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/
+Chargeur de classe de la base de données démarré - derby.database.classpath = ''
+----------------------------------------------------------------
+Fri May 08 13:58:12 CEST 2020:
+Fermeture de l'instance c99d403a-0171-f3e5-413f-00002d995f97 sur le répertoire de base de données /home/check-leo/a_SAR_S2/SRCS/JEE/MyDB/sample avec le chargeur de classe sun.misc.Launcher$AppClassLoader@74a14482 
+Fri May 08 13:58:12 CEST 2020 Thread[DRDAConnThread_8,5,main] (DATABASE = sample), (DRDAID = {73}), Arrêt de la base de données 'sample'.

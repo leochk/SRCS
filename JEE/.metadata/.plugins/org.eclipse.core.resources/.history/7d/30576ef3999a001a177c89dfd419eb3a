@@ -1,0 +1,8 @@
+package srcs.workflow.executor.server.central;
+
+public class JobTrackerCentral {
+
+	public static void main(String args[]) {
+
+	}
+}

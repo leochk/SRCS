@@ -1,0 +1,101 @@
+Exercice 2
+==========
+
+Q1/
+
+Java permet de nommer différentes fonctions du même nom si leur signature est différente.
+Un nom d'une fonction ne peut alors agir comme identifiant, car ils ne sont pas uniques.
+
+
+Exercice 3
+==========
+
+Q1/
+
+En premier temps, il faut chercher la (ou les) tâche finale du workflow. Puis, nous réalisons
+un parcours récursif du graph des tâches : si un des paramètres d'une tâche dépend d'une autre 
+tâche (i.e, annoté LinkFrom), nous exécutons cette dernière. S'il n'y a aucune dépendance (feuille du graph),
+nous pouvons directement exécuter la tâche courante en récupérant les paramètres dans l'attribut 
+context.
+A chaque fois qu'une tâche est exécutée, nous stockons le résultat dans la HashMap, avec pour
+clé l'identifiant donné à travers l'annotation Task.
+
+Exercice 4
+==========
+
+Q1/
+
+Lorsqu'une tâche doit être exécutée, nous construisons et lançons un thread chargé d'exécuter 
+la tâche. Dans le cas où cette tâche dépend d'une (ou plusieurs) autre(s), le thread va récursivement
+créer un/des nouveau(x) thread(s), jusqu'à ce qu'on atteigne une feuille du graph. Nous créons donc un 
+"arbre" de threads.
+Pour assurer le parallélisme des tâches indépendantes, nous appelons la méthode join() des
+threads lancés lorsqu'ils ont tous été lancés.
+
+Exercice 5
+==========
+
+Q1/
+
+Q2/
+
+J'ai choisi l'API RMI qui permet de mettre rapidement en place l'application Workflow, car on se
+passe de la programmation bas niveau (Socket, ObjectReader/ObjectWriter, etc...).
+JavaEE me semblait être une API beaucoup trop lourde pour ce projet, et l'impossibilité d'utiliser
+les objets Thread de Java ne nous permettrait pas de programmer précisément l'exécution parallèle
+d'un Job. De plus, un des intêrets de cette API est la gestion des entités facilitée. Or, nous n'en
+utilisons pas dans ce projet.
+
+Q3/
+
+Les objets Job possèdent un attribut Map<String, Object>, correspondant au contexte. Cette map doit
+absolument contenir des objets implémentant l'interface Serializable afin que les Job puissent être
+communiqués du client au serveur.
+
+Q4/
+
+Pour que le client puisse prendre connaissance de l'avancement, il appelle la méthode execute() du
+JobExecutorServerRemote de manière asynchrone (en utilisant un objet Thread). Puis, tant que le thread 
+exécutant cet appel est vivant (i.e le job n'a pas fini son exécution), le client appelle 
+la méthode getNbFinishedTasks() et affiche la valeur retournée.
+
+Exercice 6
+==========
+
+1/
+
+2/
+
+Le maître affecte les différentes tâches équitablement à l'aide d'une file d'esclaves. Lorsqu'une
+tâche doit être exécutée, le maitre ordonne à l'esclave en tête de file de s'en occuper. Une fois fini,
+l'esclave est remis en queue de file.
+
+3/
+
+Chaque esclave porte en attribut un pool de thread, dont la taille est fixée à la construction grâce aux
+paramètres reçus. Ainsi, grâce à cet objet, on est sûr que l'esclave n'exécute pas plus de tâches en 
+même temps qu'il est censé faire.
+
+4/
+
+De la même manière que dans l'Executor parallele local, lorsqu'on détecte un paramètre annoté LinkFrom,
+le fil d'exécution lance un nouveau thread chargé d'exécuter la tâche associée et se met en attente de ce dernier.
+Dans cette méthode, il est facile de prouver que le parallélisme est assuré, car chaque tâche est exécutée 
+par un seul et unique thread. Par contre, le nombre de thread créée dans le serveur augmente avec la taille
+des workflows reçus. De plus, les threads ne font aucune autre activité lorsqu'il attendent les threads dont
+ils dépendent.
+
+5/
+
+Le maître a en attribut une map dont les clés sont des identifiants et les valeurs les jobs. Lorsqu'un client
+demande d'exécuter un job, il obtient un identifiant correspondant à son job dans la map. Ainsi, lorsqu'il
+veut l'exécuter, il doit passer en paramètre cet identifiant afinq que le maitre puisse savoir de quel job
+il s'agit parmis ceux qu'il a stocké.
+
+6/
+
+On utilise le mécanisme des objets Future et ExecutorService proposés par Java. Avec un timeOut défini en 
+attribut, le maitre considère qu'un esclave est en panne s'il ne répond pas avant. Dans ce cas là, le maitre
+ne remet pas en queue l'esclave en panne, et réaffecte la tâche à l'esclave en tête de file.
+
+

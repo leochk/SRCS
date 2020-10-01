@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eddab581-a22e-4e5c-81c2-5b9e029b8061" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YGGlClblz8JvOJYKoC0SE0u0IE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/srcs/service/test" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs/srcs/service/test" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/srcs/service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="srcs.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs/srcs/service/test" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.srcs.service.test in ressources">
+    <configuration name="TestAppelDistant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <option name="PACKAGE_NAME" value="srcs.service.test" />
+      <option name="MAIN_CLASS_NAME" value="TestAppelDistant" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAppelDistant.testCalculatrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.service.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.service.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.service.test.TestAppelDistant" />
+      <option name="METHOD_NAME" value="testCalculatrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServeurMultiThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.service.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.service.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.service.test.TestServeurMultiThread" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.service.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.service.test.TestService" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="srcs.service.test in ressources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.service.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.service.test" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.srcs.service.test in ressources" />
+        <item itemvalue="JUnit.TestServeurMultiThread" />
+        <item itemvalue="JUnit.TestAppelDistant" />
+        <item itemvalue="JUnit.TestService" />
+        <item itemvalue="JUnit.TestAppelDistant.testCalculatrice" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eddab581-a22e-4e5c-81c2-5b9e029b8061" name="Default Changelist" comment="" />
+      <created>1582561665027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582561665027</updated>
+      <workItem from="1582561666205" duration="1221000" />
+      <workItem from="1582562899874" duration="9489000" />
+      <workItem from="1582574287612" duration="2966000" />
+      <workItem from="1582748424583" duration="242000" />
+      <workItem from="1583769251426" duration="292000" />
+      <workItem from="1583771380364" duration="2972000" />
+      <workItem from="1584002727867" duration="1317000" />
+      <workItem from="1584004715850" duration="4608000" />
+      <workItem from="1584790892362" duration="86000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="665" y="271" width="800" height="684" key="#Project_Structure" timestamp="1582561729241">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="665" y="271" width="800" height="684" key="#Project_Structure/0.27.1920.1053@0.27.1920.1053" timestamp="1582561729241" />
+    <state x="246" y="147" width="1366" height="804" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582570353091">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="246" y="147" width="1366" height="804" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1582570353091" />
+    <state x="100" y="125" width="1720" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1582563926761">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="100" y="125" width="1720" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1582563926761" />
+    <state x="768" y="266" width="374" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1583771582585">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="768" y="266" width="374" height="582" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1583771582585" />
+    <state x="823" y="496" width="494" height="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582576014432">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="823" y="496" width="494" height="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.1053@0.27.1920.1053" timestamp="1582576014432" />
+    <state x="0" y="27" width="916" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582561866679">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="0" y="27" width="916" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1582561866679" />
+    <state x="653" y="320" width="814" height="592" key="FileChooserDialogImpl" timestamp="1582563467330">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="653" y="320" width="814" height="592" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1582563467330" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1584790977727">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584790977727" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1584790977726">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584790977726" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1584790977726">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584790977726" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1584790977726">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584790977726" />
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1583774352346">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583774352346" />
+    <state width="1874" height="340" key="GridCell.Tab.1.center" timestamp="1583774352346">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583774352346" />
+    <state width="1874" height="340" key="GridCell.Tab.1.left" timestamp="1583774352346">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583774352346" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right" timestamp="1583774352346">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583774352346" />
+    <state x="556" y="187" width="1024" height="852" key="SettingsEditor" timestamp="1582562964973">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="556" y="187" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1582562964973" />
+    <state x="635" y="155" width="869" height="909" key="find.popup" timestamp="1583771772402">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="635" y="155" width="869" height="909" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1583771772402" />
+    <state x="269" y="155" width="1372" height="803" key="new project wizard" timestamp="1584004906201">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="269" y="155" width="1372" height="803" key="new project wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1584004906201" />
+    <state x="624" y="252" key="run.anything.popup" timestamp="1582572615080">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="624" y="252" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1582572615080" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1584004885439">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1584004885439" />
+  </component>
+</project>

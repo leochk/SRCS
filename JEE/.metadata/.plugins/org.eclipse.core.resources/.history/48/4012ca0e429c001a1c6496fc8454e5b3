@@ -1,0 +1,25 @@
+package srcs.workflow.server.distributed;
+
+import java.lang.reflect.InvocationTargetException;
+import java.rmi.RemoteException;
+
+import srcs.workflow.job.Job;
+import srcs.workflow.job.JobValidator;
+import srcs.workflow.job.ValidationException;
+
+public class TaskExecutor implements TaskExecutorRemote {
+	
+	public TaskExecutor() throws RemoteException {
+	}
+	@Override
+	public Object execTask(Job j, String idTask, Object[] args) throws RemoteException {
+		try {
+			JobValidator jv = new JobValidator(j);
+			return jv.getMethod(idTask).invoke(j, args);
+		} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException | ValidationException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+}

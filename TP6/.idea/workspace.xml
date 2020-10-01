@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a91d8564-b312-450e-8925-5325ac18f258" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1a23Kguritkq2LpG40JGaDfgrQw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="rmi.concurrent" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.srcs.rmi.concurrent.test in ressources">
+    <configuration name="TestSharedVariableClassical" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.rmi.concurrent.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.rmi.concurrent.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.rmi.concurrent.test.TestSharedVariableClassical" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSharedVariableClassical.testCoherence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.rmi.concurrent.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.rmi.concurrent.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.rmi.concurrent.test.TestSharedVariableClassical" />
+      <option name="METHOD_NAME" value="testCoherence" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSharedVariableReliable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.rmi.concurrent.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.rmi.concurrent.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.rmi.concurrent.test.TestSharedVariableReliable" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSharedVariableReliable.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.rmi.concurrent.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.rmi.concurrent.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.rmi.concurrent.test.TestSharedVariableReliable" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="srcs.rmi.concurrent.test in ressources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.rmi.concurrent.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.rmi.concurrent.test" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.srcs.rmi.concurrent.test in ressources" />
+        <item itemvalue="JUnit.TestSharedVariableReliable" />
+        <item itemvalue="JUnit.TestSharedVariableClassical" />
+        <item itemvalue="JUnit.TestSharedVariableReliable.test" />
+        <item itemvalue="JUnit.TestSharedVariableClassical.testCoherence" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a91d8564-b312-450e-8925-5325ac18f258" name="Default Changelist" comment="" />
+      <created>1585919798997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585919798997</updated>
+      <workItem from="1585919801400" duration="9375000" />
+      <workItem from="1585998382347" duration="3836000" />
+      <workItem from="1586170447528" duration="10219000" />
+      <workItem from="1586420369605" duration="7200000" />
+      <workItem from="1587547712447" duration="826000" />
+      <workItem from="1587733777207" duration="613000" />
+      <workItem from="1587805528010" duration="39000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1030" y="215" width="800" height="684" key="#Project_Structure" timestamp="1585922296265">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1030" y="215" width="800" height="684" key="#Project_Structure/0.27.1920.1053@0.27.1920.1053" timestamp="1585922296265" />
+    <state x="1060" y="127" width="750" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585923679559">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1060" y="127" width="750" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1585923679559" />
+    <state x="1243" y="266" width="374" height="672" key="#com.intellij.ide.util.MemberChooser" timestamp="1587733999861">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1243" y="266" width="374" height="672" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1587733999861" />
+    <state x="1188" y="440" width="494" height="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585920032707">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1188" y="440" width="494" height="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.1053@0.27.1920.1053" timestamp="1585920032707" />
+    <state x="711" y="424" width="488" height="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585927465056">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="711" y="424" width="488" height="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1585927465056" />
+    <state x="1018" y="264" width="814" height="592" key="FileChooserDialogImpl" timestamp="1585922293048">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1018" y="264" width="814" height="592" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1585922293048" />
+    <state width="914" height="275" key="GridCell.Tab.0.bottom" timestamp="1587805565958">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="914" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1587805565958" />
+    <state width="914" height="275" key="GridCell.Tab.0.center" timestamp="1587805565957">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="914" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1587805565957" />
+    <state width="914" height="275" key="GridCell.Tab.0.left" timestamp="1587805565957">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="914" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1587805565957" />
+    <state width="914" height="275" key="GridCell.Tab.0.right" timestamp="1587805565957">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="914" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1587805565957" />
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1586429644368">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1586429644368" />
+    <state width="1874" height="340" key="GridCell.Tab.1.center" timestamp="1586429644367">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1586429644367" />
+    <state width="1874" height="340" key="GridCell.Tab.1.left" timestamp="1586429644367">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1586429644367" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right" timestamp="1586429644368">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1586429644368" />
+    <state x="1102" y="453" width="646" height="231" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585919929804">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1102" y="453" width="646" height="231" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1053@0.27.1920.1053" timestamp="1585919929804" />
+    <state x="624" y="252" key="run.anything.popup" timestamp="1586175146490">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="624" y="252" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1586175146490" />
+  </component>
+</project>

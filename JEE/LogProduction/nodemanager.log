@@ -1,0 +1,305 @@
+2016-09-04 23:16:14,605 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: STARTUP_MSG: 
+2016-09-04 23:16:14,620 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-09-04 23:16:16,130 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ContainerEventDispatcher
+2016-09-04 23:16:16,131 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ApplicationEventDispatcher
+2016-09-04 23:16:16,136 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService
+2016-09-04 23:16:16,136 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServicesEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices
+2016-09-04 23:16:16,137 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl
+2016-09-04 23:16:16,137 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncherEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher
+2016-09-04 23:16:16,161 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.ContainerManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl
+2016-09-04 23:16:16,161 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.NodeManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.NodeManager
+2016-09-04 23:16:16,258 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-09-04 23:16:16,362 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-09-04 23:16:16,362 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system started
+2016-09-04 23:16:16,491 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.event.LogHandlerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler
+2016-09-04 23:16:16,492 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadService
+2016-09-04 23:16:16,492 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: per directory file limit = 8192
+2016-09-04 23:16:16,553 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService$LocalizerTracker
+2016-09-04 23:16:16,589 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: The Auxilurary Service named 'mapreduce_shuffle' in the configuration is for class org.apache.hadoop.mapred.ShuffleHandler which has a name of 'httpshuffle'. Because these are not the same tools trying to send ServiceData and read Service Meta Data may have issues unless the refer to the name in the config.
+2016-09-04 23:16:16,589 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: Adding auxiliary service httpshuffle, "mapreduce_shuffle"
+2016-09-04 23:16:16,632 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl:  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@795509d9
+2016-09-04 23:16:16,632 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl:  Using ResourceCalculatorProcessTree : null
+2016-09-04 23:16:16,632 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Physical memory check enabled: true
+2016-09-04 23:16:16,632 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Virtual memory check enabled: true
+2016-09-04 23:16:16,639 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: NodeManager configured with 8 G physical memory allocated to containers, which is more than 80% of the total physical memory available (3.9 G). Thrashing might happen.
+2016-09-04 23:16:16,646 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Initialized nodemanager for null: physical-memory=8192 virtual-memory=17204 virtual-cores=8
+2016-09-04 23:16:16,734 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:16:16,782 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 45592
+2016-09-04 23:16:16,829 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ContainerManagementProtocolPB to the server
+2016-09-04 23:16:16,829 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Blocking new container-requests as container manager rpc server is still starting.
+2016-09-04 23:16:16,830 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:16:16,833 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 45592: starting
+2016-09-04 23:16:16,872 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMContainerTokenSecretManager: Updating node address : vm-ubuntu:45592
+2016-09-04 23:16:16,914 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:16:16,922 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8040
+2016-09-04 23:16:16,925 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.nodemanager.api.LocalizationProtocolPB to the server
+2016-09-04 23:16:16,943 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8040: starting
+2016-09-04 23:16:16,944 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: Localizer started on port 8040
+2016-09-04 23:16:16,946 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:16:16,959 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2016-09-04 23:16:16,979 INFO org.apache.hadoop.mapred.ShuffleHandler: httpshuffle listening on port 13562
+2016-09-04 23:16:16,990 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: ContainerManager started at vm-ubuntu/127.0.1.1:45592
+2016-09-04 23:16:16,990 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: ContainerManager bound to 0.0.0.0/0.0.0.0:0
+2016-09-04 23:16:16,992 INFO org.apache.hadoop.yarn.server.nodemanager.webapp.WebServer: Instantiating NMWebApp at 0.0.0.0:8042
+2016-09-04 23:16:17,139 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-09-04 23:16:17,147 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-09-04 23:16:17,153 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.nodemanager is not defined
+2016-09-04 23:16:17,162 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-09-04 23:16:17,165 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context node
+2016-09-04 23:16:17,165 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-09-04 23:16:17,165 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-09-04 23:16:17,169 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /node/*
+2016-09-04 23:16:17,169 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2016-09-04 23:16:17,791 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2016-09-04 23:16:17,793 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8042
+2016-09-04 23:16:17,794 INFO org.mortbay.log: jetty-6.1.26
+2016-09-04 23:16:17,834 INFO org.mortbay.log: Extract jar:file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/share/hadoop/yarn/hadoop-yarn-common-2.7.3.jar!/webapps/node to /tmp/Jetty_0_0_0_0_8042_node____19tj0x/webapp
+2016-09-04 23:16:19,296 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8042
+2016-09-04 23:16:19,296 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app node started at 8042
+2016-09-04 23:16:19,306 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8031
+2016-09-04 23:16:19,332 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Sending out 0 NM container statuses: []
+2016-09-04 23:16:19,339 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Registering with RM using containers :[]
+2016-09-04 23:16:19,585 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMContainerTokenSecretManager: Rolling master-key for container-tokens, got key with id 802208801
+2016-09-04 23:16:19,593 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMTokenSecretManagerInNM: Rolling master-key for container-tokens, got key with id 1159692980
+2016-09-04 23:16:19,593 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Registered with ResourceManager as vm-ubuntu:45592 with total resource of <memory:8192, vCores:8>
+2016-09-04 23:16:19,593 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Notifying ContainerManager to unblock new container-requests
+2016-09-04 23:16:44,726 ERROR org.apache.hadoop.yarn.server.nodemanager.NodeManager: RECEIVED SIGNAL 15: SIGTERM
+2016-09-04 23:16:44,750 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8042
+2016-09-04 23:16:44,752 WARN org.apache.hadoop.http.HttpServer2: HttpServer Acceptor: isRunning is false. Rechecking.
+2016-09-04 23:16:44,752 WARN org.apache.hadoop.http.HttpServer2: HttpServer Acceptor: isRunning is false
+2016-09-04 23:16:44,857 INFO org.apache.hadoop.ipc.Server: Stopping server on 45592
+2016-09-04 23:16:44,861 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:16:44,862 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 45592
+2016-09-04 23:16:44,863 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl is interrupted. Exiting.
+2016-09-04 23:16:44,884 INFO org.apache.hadoop.ipc.Server: Stopping server on 8040
+2016-09-04 23:16:44,884 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8040
+2016-09-04 23:16:44,885 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:16:44,886 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: Public cache exiting
+2016-09-04 23:16:44,886 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping NodeManager metrics system...
+2016-09-04 23:16:44,887 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system stopped.
+2016-09-04 23:16:44,887 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system shutdown complete.
+2016-09-04 23:16:44,887 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: SHUTDOWN_MSG: 
+2016-09-04 23:17:46,168 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: STARTUP_MSG: 
+2016-09-04 23:17:46,195 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-09-04 23:17:47,991 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ContainerEventDispatcher
+2016-09-04 23:17:47,992 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ApplicationEventDispatcher
+2016-09-04 23:17:47,992 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService
+2016-09-04 23:17:47,993 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServicesEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices
+2016-09-04 23:17:47,995 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl
+2016-09-04 23:17:47,996 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncherEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher
+2016-09-04 23:17:48,033 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.ContainerManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl
+2016-09-04 23:17:48,034 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.NodeManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.NodeManager
+2016-09-04 23:17:48,183 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-09-04 23:17:48,400 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-09-04 23:17:48,400 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system started
+2016-09-04 23:17:48,466 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.event.LogHandlerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler
+2016-09-04 23:17:48,467 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadService
+2016-09-04 23:17:48,474 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: per directory file limit = 8192
+2016-09-04 23:17:48,523 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: usercache path : file:/tmp/hadoop-jlejeune/nm-local-dir/usercache_DEL_1473023868478
+2016-09-04 23:17:48,666 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService$LocalizerTracker
+2016-09-04 23:17:48,741 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: The Auxilurary Service named 'mapreduce_shuffle' in the configuration is for class org.apache.hadoop.mapred.ShuffleHandler which has a name of 'httpshuffle'. Because these are not the same tools trying to send ServiceData and read Service Meta Data may have issues unless the refer to the name in the config.
+2016-09-04 23:17:48,742 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: Adding auxiliary service httpshuffle, "mapreduce_shuffle"
+2016-09-04 23:17:48,827 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl:  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@548d708a
+2016-09-04 23:17:48,827 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl:  Using ResourceCalculatorProcessTree : null
+2016-09-04 23:17:48,827 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Physical memory check enabled: true
+2016-09-04 23:17:48,827 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Virtual memory check enabled: true
+2016-09-04 23:17:48,838 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: NodeManager configured with 8 G physical memory allocated to containers, which is more than 80% of the total physical memory available (3.9 G). Thrashing might happen.
+2016-09-04 23:17:48,843 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Initialized nodemanager for null: physical-memory=8192 virtual-memory=17204 virtual-cores=8
+2016-09-04 23:17:48,948 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:17:48,976 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 36172
+2016-09-04 23:17:49,014 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ContainerManagementProtocolPB to the server
+2016-09-04 23:17:49,014 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Blocking new container-requests as container manager rpc server is still starting.
+2016-09-04 23:17:49,021 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:17:49,025 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 36172: starting
+2016-09-04 23:17:49,075 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMContainerTokenSecretManager: Updating node address : vm-ubuntu:36172
+2016-09-04 23:17:49,120 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-09-04 23:17:49,120 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8040
+2016-09-04 23:17:49,124 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.nodemanager.api.LocalizationProtocolPB to the server
+2016-09-04 23:17:49,128 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-09-04 23:17:49,128 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8040: starting
+2016-09-04 23:17:49,129 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: Localizer started on port 8040
+2016-09-04 23:17:49,158 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2016-09-04 23:17:49,186 INFO org.apache.hadoop.mapred.ShuffleHandler: httpshuffle listening on port 13562
+2016-09-04 23:17:49,193 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: ContainerManager started at vm-ubuntu/127.0.1.1:36172
+2016-09-04 23:17:49,193 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: ContainerManager bound to 0.0.0.0/0.0.0.0:0
+2016-09-04 23:17:49,194 INFO org.apache.hadoop.yarn.server.nodemanager.webapp.WebServer: Instantiating NMWebApp at 0.0.0.0:8042
+2016-09-04 23:17:49,414 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-09-04 23:17:49,436 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-09-04 23:17:49,453 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.nodemanager is not defined
+2016-09-04 23:17:49,469 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-09-04 23:17:49,471 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context node
+2016-09-04 23:17:49,471 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-09-04 23:17:49,471 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-09-04 23:17:49,474 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /node/*
+2016-09-04 23:17:49,474 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2016-09-04 23:17:50,342 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2016-09-04 23:17:50,350 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8042
+2016-09-04 23:17:50,350 INFO org.mortbay.log: jetty-6.1.26
+2016-09-04 23:17:50,431 INFO org.mortbay.log: Extract jar:file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/share/hadoop/yarn/hadoop-yarn-common-2.7.3.jar!/webapps/node to /tmp/Jetty_0_0_0_0_8042_node____19tj0x/webapp
+2016-09-04 23:17:52,649 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8042
+2016-09-04 23:17:52,649 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app node started at 8042
+2016-09-04 23:17:52,668 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8031
+2016-09-04 23:17:52,711 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Sending out 0 NM container statuses: []
+2016-09-04 23:17:52,717 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Registering with RM using containers :[]
+2016-09-04 23:17:53,058 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMContainerTokenSecretManager: Rolling master-key for container-tokens, got key with id -807167253
+2016-09-04 23:17:53,065 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMTokenSecretManagerInNM: Rolling master-key for container-tokens, got key with id -1756293600
+2016-09-04 23:17:53,066 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Registered with ResourceManager as vm-ubuntu:36172 with total resource of <memory:8192, vCores:8>
+2016-09-04 23:17:53,066 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Notifying ContainerManager to unblock new container-requests
+2016-09-04 23:18:34,493 ERROR org.apache.hadoop.yarn.server.nodemanager.NodeManager: RECEIVED SIGNAL 15: SIGTERM
+2016-09-04 23:18:34,512 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8042
+2016-09-04 23:18:34,513 INFO org.apache.hadoop.ipc.Server: Stopping server on 36172
+2016-09-04 23:18:34,514 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:18:34,514 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 36172
+2016-09-04 23:18:34,518 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl is interrupted. Exiting.
+2016-09-04 23:18:34,535 INFO org.apache.hadoop.ipc.Server: Stopping server on 8040
+2016-09-04 23:18:34,537 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2016-09-04 23:18:34,537 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: Public cache exiting
+2016-09-04 23:18:34,538 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8040
+2016-09-04 23:18:34,538 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping NodeManager metrics system...
+2016-09-04 23:18:34,540 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system stopped.
+2016-09-04 23:18:34,541 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system shutdown complete.
+2016-09-04 23:18:34,541 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: SHUTDOWN_MSG: 
+2016-12-01 16:05:41,250 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: STARTUP_MSG: 
+2016-12-01 16:05:41,292 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-12-01 16:05:43,660 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ContainerEventDispatcher
+2016-12-01 16:05:43,661 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ApplicationEventDispatcher
+2016-12-01 16:05:43,662 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService
+2016-12-01 16:05:43,663 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServicesEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices
+2016-12-01 16:05:43,663 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl
+2016-12-01 16:05:43,664 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncherEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher
+2016-12-01 16:05:43,697 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.ContainerManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl
+2016-12-01 16:05:43,698 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.NodeManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.NodeManager
+2016-12-01 16:05:43,818 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-12-01 16:05:43,967 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-12-01 16:05:43,968 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system started
+2016-12-01 16:05:44,090 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.event.LogHandlerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler
+2016-12-01 16:05:44,102 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadService
+2016-12-01 16:05:44,102 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: per directory file limit = 8192
+2016-12-01 16:05:44,261 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService$LocalizerTracker
+2016-12-01 16:05:44,342 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: The Auxilurary Service named 'mapreduce_shuffle' in the configuration is for class org.apache.hadoop.mapred.ShuffleHandler which has a name of 'httpshuffle'. Because these are not the same tools trying to send ServiceData and read Service Meta Data may have issues unless the refer to the name in the config.
+2016-12-01 16:05:44,342 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: Adding auxiliary service httpshuffle, "mapreduce_shuffle"
+2016-12-01 16:05:44,503 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl:  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@795509d9
+2016-12-01 16:05:44,503 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl:  Using ResourceCalculatorProcessTree : null
+2016-12-01 16:05:44,504 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Physical memory check enabled: true
+2016-12-01 16:05:44,505 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Virtual memory check enabled: true
+2016-12-01 16:05:44,520 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: NodeManager configured with 8 G physical memory allocated to containers, which is more than 80% of the total physical memory available (3.9 G). Thrashing might happen.
+2016-12-01 16:05:44,529 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Initialized nodemanager for null: physical-memory=8192 virtual-memory=17204 virtual-cores=8
+2016-12-01 16:05:44,583 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-12-01 16:05:44,627 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 41623
+2016-12-01 16:05:44,685 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ContainerManagementProtocolPB to the server
+2016-12-01 16:05:44,685 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Blocking new container-requests as container manager rpc server is still starting.
+2016-12-01 16:05:44,691 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-12-01 16:05:44,696 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 41623: starting
+2016-12-01 16:05:44,744 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMContainerTokenSecretManager: Updating node address : vm-ubuntu:41623
+2016-12-01 16:05:44,762 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-12-01 16:05:44,763 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8040
+2016-12-01 16:05:44,765 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.nodemanager.api.LocalizationProtocolPB to the server
+2016-12-01 16:05:44,767 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-12-01 16:05:44,767 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8040: starting
+2016-12-01 16:05:44,768 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: Localizer started on port 8040
+2016-12-01 16:05:44,844 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2016-12-01 16:05:44,922 INFO org.apache.hadoop.mapred.ShuffleHandler: httpshuffle listening on port 13562
+2016-12-01 16:05:44,935 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: ContainerManager started at vm-ubuntu/127.0.1.1:41623
+2016-12-01 16:05:44,935 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: ContainerManager bound to 0.0.0.0/0.0.0.0:0
+2016-12-01 16:05:44,937 INFO org.apache.hadoop.yarn.server.nodemanager.webapp.WebServer: Instantiating NMWebApp at 0.0.0.0:8042
+2016-12-01 16:05:45,099 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-12-01 16:05:45,110 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-12-01 16:05:45,121 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.nodemanager is not defined
+2016-12-01 16:05:45,142 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-12-01 16:05:45,145 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context node
+2016-12-01 16:05:45,146 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-12-01 16:05:45,147 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-12-01 16:05:45,158 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /node/*
+2016-12-01 16:05:45,158 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2016-12-01 16:05:45,986 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2016-12-01 16:05:45,989 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8042
+2016-12-01 16:05:45,990 INFO org.mortbay.log: jetty-6.1.26
+2016-12-01 16:05:46,072 INFO org.mortbay.log: Extract jar:file:/home/jlejeune/my_soft/distribs_hadoop/hadoop-2.7.3/share/hadoop/yarn/hadoop-yarn-common-2.7.3.jar!/webapps/node to /tmp/Jetty_0_0_0_0_8042_node____19tj0x/webapp
+2016-12-01 16:05:49,390 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8042
+2016-12-01 16:05:49,390 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app node started at 8042
+2016-12-01 16:05:49,428 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8031
+2016-12-01 16:05:49,557 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Sending out 0 NM container statuses: []
+2016-12-01 16:05:49,595 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Registering with RM using containers :[]
+2016-12-01 16:05:50,464 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMContainerTokenSecretManager: Rolling master-key for container-tokens, got key with id -1419849326
+2016-12-01 16:05:50,470 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMTokenSecretManagerInNM: Rolling master-key for container-tokens, got key with id -812785803
+2016-12-01 16:05:50,471 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Registered with ResourceManager as vm-ubuntu:41623 with total resource of <memory:8192, vCores:8>
+2016-12-01 16:05:50,471 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Notifying ContainerManager to unblock new container-requests
+2016-12-01 16:10:30,636 INFO SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for appattempt_1480604743198_0001_000001 (auth:SIMPLE)
+2016-12-01 16:10:31,074 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Start request for container_1480604743198_0001_01_000001 by user jlejeune
+2016-12-01 16:10:31,122 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Creating a new application reference for app application_1480604743198_0001
+2016-12-01 16:10:31,138 INFO org.apache.hadoop.yarn.server.nodemanager.NMAuditLogger: USER=jlejeune	IP=127.0.0.1	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1480604743198_0001	CONTAINERID=container_1480604743198_0001_01_000001
+2016-12-01 16:10:31,138 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl: Application application_1480604743198_0001 transitioned from NEW to INITING
+2016-12-01 16:10:31,139 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl: Adding container_1480604743198_0001_01_000001 to application application_1480604743198_0001
+2016-12-01 16:10:31,156 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl: Application application_1480604743198_0001 transitioned from INITING to RUNNING
+2016-12-01 16:10:31,164 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl: Container container_1480604743198_0001_01_000001 transitioned from NEW to LOCALIZING
+2016-12-01 16:10:31,164 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: Got event CONTAINER_INIT for appId application_1480604743198_0001
+2016-12-01 16:10:31,187 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalizedResource: Resource hdfs://localhost:9000/tmp/hadoop-yarn/staging/jlejeune/.staging/job_1480604743198_0001/job.splitmetainfo transitioned from INIT to DOWNLOADING
+2016-12-01 16:10:31,187 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalizedResource: Resource hdfs://localhost:9000/tmp/hadoop-yarn/staging/jlejeune/.staging/job_1480604743198_0001/job.jar transitioned from INIT to DOWNLOADING
+2016-12-01 16:10:31,188 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalizedResource: Resource hdfs://localhost:9000/tmp/hadoop-yarn/staging/jlejeune/.staging/job_1480604743198_0001/job.split transitioned from INIT to DOWNLOADING
+2016-12-01 16:10:31,188 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalizedResource: Resource hdfs://localhost:9000/tmp/hadoop-yarn/staging/jlejeune/.staging/job_1480604743198_0001/job.xml transitioned from INIT to DOWNLOADING
+2016-12-01 16:10:31,188 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: Created localizer for container_1480604743198_0001_01_000001
+2016-12-01 16:10:31,431 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: Writing credentials to the nmPrivate file /tmp/hadoop-jlejeune/nm-local-dir/nmPrivate/container_1480604743198_0001_01_000001.tokens. Credentials list: 
+2016-12-01 16:10:31,507 INFO org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: Initializing user jlejeune
+2016-12-01 16:10:31,577 INFO org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: Copying from /tmp/hadoop-jlejeune/nm-local-dir/nmPrivate/container_1480604743198_0001_01_000001.tokens to /tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001/container_1480604743198_0001_01_000001.tokens
+2016-12-01 16:10:31,578 INFO org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: Localizer CWD set to /tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001 = file:/tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001
+2016-12-01 16:10:32,709 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalizedResource: Resource hdfs://localhost:9000/tmp/hadoop-yarn/staging/jlejeune/.staging/job_1480604743198_0001/job.splitmetainfo(->/tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001/filecache/10/job.splitmetainfo) transitioned from DOWNLOADING to LOCALIZED
+2016-12-01 16:10:35,262 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalizedResource: Resource hdfs://localhost:9000/tmp/hadoop-yarn/staging/jlejeune/.staging/job_1480604743198_0001/job.jar(->/tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001/filecache/11/job.jar) transitioned from DOWNLOADING to LOCALIZED
+2016-12-01 16:10:35,294 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalizedResource: Resource hdfs://localhost:9000/tmp/hadoop-yarn/staging/jlejeune/.staging/job_1480604743198_0001/job.split(->/tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001/filecache/12/job.split) transitioned from DOWNLOADING to LOCALIZED
+2016-12-01 16:10:35,321 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalizedResource: Resource hdfs://localhost:9000/tmp/hadoop-yarn/staging/jlejeune/.staging/job_1480604743198_0001/job.xml(->/tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001/filecache/13/job.xml) transitioned from DOWNLOADING to LOCALIZED
+2016-12-01 16:10:35,327 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl: Container container_1480604743198_0001_01_000001 transitioned from LOCALIZING to LOCALIZED
+2016-12-01 16:10:35,387 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl: Container container_1480604743198_0001_01_000001 transitioned from LOCALIZED to RUNNING
+2016-12-01 16:10:35,396 INFO org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: launchContainer: [bash, /tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001/container_1480604743198_0001_01_000001/default_container_executor.sh]
+2016-12-01 16:10:36,016 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Starting resource-monitoring for container_1480604743198_0001_01_000001
+2016-12-01 16:10:36,153 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 44.1 MB of 2 GB physical memory used; 2.6 GB of 4.2 GB virtual memory used
+2016-12-01 16:10:39,184 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 82.6 MB of 2 GB physical memory used; 2.6 GB of 4.2 GB virtual memory used
+2016-12-01 16:10:42,244 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 115.6 MB of 2 GB physical memory used; 2.6 GB of 4.2 GB virtual memory used
+2016-12-01 16:10:45,300 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 156.2 MB of 2 GB physical memory used; 2.6 GB of 4.2 GB virtual memory used
+2016-12-01 16:10:48,401 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 181.8 MB of 2 GB physical memory used; 2.6 GB of 4.2 GB virtual memory used
+2016-12-01 16:10:51,447 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 259.2 MB of 2 GB physical memory used; 2.6 GB of 4.2 GB virtual memory used
+2016-12-01 16:10:54,479 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 267.7 MB of 2 GB physical memory used; 2.6 GB of 4.2 GB virtual memory used
+2016-12-01 16:10:57,530 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 287.0 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:00,571 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 292.4 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:01,707 INFO SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for appattempt_1480604743198_0001_000001 (auth:SIMPLE)
+2016-12-01 16:11:01,736 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Start request for container_1480604743198_0001_01_000002 by user jlejeune
+2016-12-01 16:11:01,736 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl: Adding container_1480604743198_0001_01_000002 to application application_1480604743198_0001
+2016-12-01 16:11:01,736 INFO org.apache.hadoop.yarn.server.nodemanager.NMAuditLogger: USER=jlejeune	IP=127.0.0.1	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1480604743198_0001	CONTAINERID=container_1480604743198_0001_01_000002
+2016-12-01 16:11:01,740 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl: Container container_1480604743198_0001_01_000002 transitioned from NEW to LOCALIZING
+2016-12-01 16:11:01,740 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: Got event CONTAINER_INIT for appId application_1480604743198_0001
+2016-12-01 16:11:01,740 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: Got event APPLICATION_INIT for appId application_1480604743198_0001
+2016-12-01 16:11:01,741 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices: Got APPLICATION_INIT for service mapreduce_shuffle
+2016-12-01 16:11:01,759 INFO org.apache.hadoop.mapred.ShuffleHandler: Added token for job_1480604743198_0001
+2016-12-01 16:11:01,764 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl: Container container_1480604743198_0001_01_000002 transitioned from LOCALIZING to LOCALIZED
+2016-12-01 16:11:01,921 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl: Container container_1480604743198_0001_01_000002 transitioned from LOCALIZED to RUNNING
+2016-12-01 16:11:01,951 INFO org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: launchContainer: [bash, /tmp/hadoop-jlejeune/nm-local-dir/usercache/jlejeune/appcache/application_1480604743198_0001/container_1480604743198_0001_01_000002/default_container_executor.sh]
+2016-12-01 16:11:03,571 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Starting resource-monitoring for container_1480604743198_0001_01_000002
+2016-12-01 16:11:03,596 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 303.9 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:03,630 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 73.2 MB of 1 GB physical memory used; 1.7 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:06,643 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 304.1 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:06,659 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 132.1 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:09,697 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 306.1 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:09,718 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 178.3 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:12,760 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 306.1 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:12,812 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 183.9 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:15,844 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 308.2 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:15,870 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 198.1 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:18,896 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 308.2 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:18,944 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 198.6 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:21,965 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 308.2 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:21,985 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 198.6 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:25,110 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 308.2 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:25,254 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 194.3 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:28,263 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 310.2 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:28,296 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 194.4 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:31,322 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19396 for container-id container_1480604743198_0001_01_000001: 310.2 MB of 2 GB physical memory used; 2.7 GB of 4.2 GB virtual memory used
+2016-12-01 16:11:31,347 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 19525 for container-id container_1480604743198_0001_01_000002: 194.7 MB of 1 GB physical memory used; 1.8 GB of 2.1 GB virtual memory used
+2016-12-01 16:11:32,025 INFO SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for appattempt_1480604743198_0001_000001 (auth:SIMPLE)
+2016-12-01 16:11:32,032 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Stopping container with container Id: container_1480604743198_0001_01_000002
+2016-12-01 16:11:32,034 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl: Container container_1480604743198_0001_01_000002 transitioned from RUNNING to KILLING
+2016-12-01 16:11:32,034 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch: Cleaning up container container_1480604743198_0001_01_000002
+2016-12-01 16:11:32,034 INFO org.apache.hadoop.yarn.server.nodemanager.NMAuditLogger: USER=jlejeune	IP=127.0.0.1	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1480604743198_0001	CONTAINERID=container_1480604743198_0001_01_000002
+2016-12-01 16:11:32,306 ERROR org.apache.hadoop.yarn.server.nodemanager.NodeManager: RECEIVED SIGNAL 15: SIGTERM
+2016-12-01 16:11:32,333 WARN org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: Exit code from container container_1480604743198_0001_01_000001 is : 143
+2016-12-01 16:11:32,408 WARN org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: Exit code from container container_1480604743198_0001_01_000002 is : 143
+2016-12-01 16:11:32,859 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8042
+2016-12-01 16:11:32,920 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Applications still running : [application_1480604743198_0001]
+2016-12-01 16:11:32,928 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl: Waiting for Applications to be Finished

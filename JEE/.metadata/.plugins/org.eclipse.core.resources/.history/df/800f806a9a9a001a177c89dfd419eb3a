@@ -1,0 +1,13 @@
+package srcs.workflow.server.central;
+
+import srcs.workflow.executor.JobExecutor;
+import srcs.workflow.job.Job;
+
+public class JobExecutorRemoteCentral extends JobExecutor implements Remote {
+
+	public JobExecutorRemoteCentral(Job job) {
+		super(job);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

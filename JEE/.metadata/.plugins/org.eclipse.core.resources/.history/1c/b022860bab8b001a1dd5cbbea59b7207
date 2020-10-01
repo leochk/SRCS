@@ -1,0 +1,36 @@
+package client;
+
+import static org.junit.Assert.assertEquals;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+import org.junit.Test;
+
+import beans.CounterRemote;
+import beans.SayHelloRemote;
+
+public class TestClient {
+
+	@Test
+	public void test() throws NamingException {
+		//Properties props = new Properties(); 
+		//si machine distante, changer ci-dessous 
+		//props.setProperty("org.omg.CORBA.ORBInitialHost", "localhost"); 
+		//props.setProperty("org.omg.CORBA.ORBInitialPort", "8686"); 
+		Context context = new InitialContext();
+		Object o = context.lookup("java:global/HelloApplication/HelloEJB/SayHello!beans.SayHello");
+		SayHelloRemote sh_rem = (SayHelloRemote) o;
+		assertEquals("Hello World", sh_rem.hello("World")); 
+		
+		o = context.lookup("java:global/HelloApplication/HelloEJB/Counter!beans.CounterRemote");
+		CounterRemote cpt_rem = (CounterRemote) o; 
+		cpt_rem.increment(); 
+		cpt_rem.increment(); 
+		cpt_rem.increment(); 
+		cpt_rem.increment(); 
+		cpt_rem.decrement(); 
+		assertEquals(3, cpt_rem.getValue()); 
+	}
+}

@@ -1,0 +1,119 @@
+2/
+Le fichier mapStringRem.proto génère à la compilation un
+fichier par service
+=> MapStringRemGRPC.java
+    -> 4 classes membres statiques
+      Serveur - MapStringRemImplBase
+      Client  - MapStringRemBlockingStub  (synchrone)
+      Client  - MapStringRemoteStub       (asynchrone)
+      Client  - MapStringRemFuture
+
+=> EntryorBuilder.java (getters, setters)
+
+=> Entry.java
+    -> static class EntryBuilder
+
+3/
+public class MapStringRem implements MapStringRemGRPC.MapStringRemImplBase {
+  private Map<String, String> map = new HashMap<String, String>();
+
+  @Override
+  public void put (Entry e, StreamObserver<Empty> out) {
+    synchronized (this) {
+      map.put(e.getKey(), e.getValue());
+    }
+    out.onNext(Empty.getDefaultInstance());
+    out.onCompleted();
+  }
+
+  @Override
+  public void get (StringValue k, StreamObserver<StringValue> out) {
+    String res;
+    synchronized (this) {
+      res = map.get(k.getValue());
+    }
+    out.onNext(StringValue.of(res));
+    out.onCompleted();
+  }
+}
+
+4/
+
+public MapTest {
+  static ManagedChannel chan;
+
+  @BeforeClass
+  public static void deploy() {
+    ServerBuilder<?> sbuilder = ServerBuilder.forPort(4242)
+                                              .addService(new MapStringRem());
+    Server s = sbuilder.build();
+    s.start();
+
+    chan = ManagedChannelBuilder.forAddress("localhost", 4242).build();
+  }
+
+  @Test
+  public void testBloquand() {
+    MapStringRemBlockingStub s = MapStringRemGRPC.newBlockingStub(chan);
+    s.put(Entry.newBuilder().setKey("Sopena").setValue("Julien").build());
+    assertEquals("Julien", s.get(StringValue.of("Sopena")).getValue());
+  }
+}
+
+5/
+
+@Test
+public void testFuture() {
+  MapStringRemBlockingStub s = MapStringRemGRPC.newFuture(chan);
+  ListenableFuture<Entry> ret = s.put(Entry.newBuilder().setKey("Sopena").setValue("Julien").build());
+  ret.get();
+  assertEquals("Julien", s.get(StringValue.of("Sopena")).get().getValue());
+}
+
+6/
+boolean repondu = false;
+String res;
+@Test
+public void testNonBloquant() {
+  MapStringRemStub m =  MapStringRemGRPC.newStub(chan);
+  final Object lock = new Object();
+
+  map.put(Entry.newBuilder().setKey("Sopena").setValue("Julien").build()
+  , new StringObserver<Empty>() {
+    public void onNext(Empty e) {
+
+    }
+
+    public void onError(Throwable T) {
+
+    }
+
+    public void onCompleted() {
+      synchronized (lock) {
+      repondu = true;
+        lock.notify();
+      }
+    }
+  }
+  );
+
+  synchronized(lock) {
+    while(!repondu)
+      lock.wait();
+  }
+  repondu = false;
+  map.get(_____, new StreamObserver<StringValue>()) {
+                    public void onNext (StringValue s) {
+                      res = s.getValue();
+                    }
+
+                    public onCompleted() {
+                      synchronized (lock) {
+                        repondu = true;
+                        lock.notify();
+                      }
+                    }
+                  }
+}
+
+7/

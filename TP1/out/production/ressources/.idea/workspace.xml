@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b8f68c0-4633-4b19-bb4a-6d8b6799fdfb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XU8V5eO8H78i29QiKBdz03uzx4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/junit.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.SauvegardableTest">
+    <configuration name="CompteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.persistance.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.persistance.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.persistance.test.CompteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SauvegardableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.persistance.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.persistance.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.persistance.test.SauvegardableTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableauIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ressources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srcs.persistance.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srcs.persistance.test" />
+      <option name="MAIN_CLASS_NAME" value="srcs.persistance.test.TableauIntTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SauvegardableTest" />
+        <item itemvalue="JUnit.CompteTest" />
+        <item itemvalue="JUnit.TableauIntTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b8f68c0-4633-4b19-bb4a-6d8b6799fdfb" name="Default Changelist" comment="" />
+      <created>1581089332238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581089332238</updated>
+      <workItem from="1581089334533" duration="5067000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="191" width="847" height="677" key="#Project_Structure" timestamp="1581090006176">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="555" y="191" width="847" height="677" key="#Project_Structure/0.27.1920.1006@0.27.1920.1006" timestamp="1581090006176" />
+    <state x="563" y="199" width="784" height="661" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581089964850">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="563" y="199" width="784" height="661" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.27.1920.1006@0.27.1920.1006" timestamp="1581089964850" />
+    <state x="693" y="282" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581090437679">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="693" y="282" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1006@0.27.1920.1006" timestamp="1581090437679" />
+    <state x="606" y="273" width="735" height="513" key="FileChooserDialogImpl" timestamp="1581090000559">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="606" y="273" width="735" height="513" key="FileChooserDialogImpl/0.27.1920.1006@0.27.1920.1006" timestamp="1581090000559" />
+    <state width="1874" height="247" key="GridCell.Tab.0.bottom" timestamp="1581094503174">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state width="1874" height="247" key="GridCell.Tab.0.bottom/0.27.1920.1006@0.27.1920.1006" timestamp="1581094503174" />
+    <state width="1874" height="247" key="GridCell.Tab.0.center" timestamp="1581094503174">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state width="1874" height="247" key="GridCell.Tab.0.center/0.27.1920.1006@0.27.1920.1006" timestamp="1581094503174" />
+    <state width="1874" height="247" key="GridCell.Tab.0.left" timestamp="1581094503174">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state width="1874" height="247" key="GridCell.Tab.0.left/0.27.1920.1006@0.27.1920.1006" timestamp="1581094503174" />
+    <state width="1874" height="247" key="GridCell.Tab.0.right" timestamp="1581094503174">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state width="1874" height="247" key="GridCell.Tab.0.right/0.27.1920.1006@0.27.1920.1006" timestamp="1581094503174" />
+    <state x="616" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1581089337367">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="616" y="357" key="com.intellij.ide.util.TipDialog/0.27.1920.1006@0.27.1920.1006" timestamp="1581089337367" />
+    <state x="632" y="426" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581090015226">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="632" y="426" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1006@0.27.1920.1006" timestamp="1581090015226" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581092850496">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1006@0.27.1920.1006" timestamp="1581092850496" />
+  </component>
+</project>

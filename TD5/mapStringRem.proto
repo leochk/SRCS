@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+/*
+message entry {
+  string key = 1;
+  string value = 2;
+}
+
+service mapStringRem {
+  rpc put (entry) returns (google.protobuf.Empty);
+  rpc get (google.protobuf.StringValue) returns (google.protobuf.StringValue);
+}
+*/
+
+message PutM {
+  Any key = 1;
+  Any value = 2;
+}
+
+service MapService {
+  rpc get (Any) returns (Any);
+  rpc put (PutM) returns (Empty)
+}

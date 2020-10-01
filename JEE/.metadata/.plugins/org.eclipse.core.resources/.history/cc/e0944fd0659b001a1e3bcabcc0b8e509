@@ -1,0 +1,111 @@
+package srcs.workflow.server.central;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import srcs.workflow.graph.Graph;
+import srcs.workflow.job.Context;
+import srcs.workflow.job.Job;
+import srcs.workflow.job.JobValidator;
+import srcs.workflow.job.LinkFrom;
+import srcs.workflow.job.Task;
+import srcs.workflow.job.ValidationException;
+
+public class JobExecutorBuilder implements JobExecutorBuilderRemote {
+	private Job j;
+	private JobValidator jv;
+	private Graph<String> graphTask;
+	private Map<String, Object> context;
+
+	private int cptTaskFinished = 0;
+
+	public JobExecutorBuilder() throws RemoteException {
+	
+	}
+
+	@Override
+	public void setJob(Job j) throws RemoteException {
+		this.j = j;
+		try {
+			jv = new JobValidator(j);
+			graphTask = jv.getTaskGraph();
+			context = j.getContext();
+		} catch (ValidationException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public Map<String, Object> execute(PrintStream p) throws RemoteException {
+		Map<String, Object> res = new HashMap<>();
+
+		/* Recherche des tasks "finaux" (i.e, ceux qui n'ont pas de out) */
+		for (String task : graphTask) {
+			if (graphTask.getNeighborsOut(task).size() == 0) {
+				Thread t = new Thread(() -> execMethod(jv.getMethod(task), res));
+				t.start();
+				try {
+					t.join();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return res;
+	}
+
+	private Object execMethod(Method m, Map<String, Object> res) {
+		Object invokeRes;
+		Object[] args = new Object[m.getParameterCount()];
+		String idTask = m.getAnnotation(Task.class).value();
+		int i = 0;
+
+		/* Check if we've already computed inputted m */
+		if ((invokeRes = res.get(idTask)) != null)
+			return invokeRes;
+
+		for (Parameter p : m.getParameters()) {
+			String idparam;
+			List<Thread> threads = new ArrayList<>();
+
+			/* LinkFrom case */
+			if (p.isAnnotationPresent(LinkFrom.class)) {
+				idparam = p.getAnnotation(LinkFrom.class).value();
+				final int i_ = i;
+				Thread t = new Thread(() -> args[i_] = execMethod(jv.getMethod(idparam), res));
+				threads.add(t);
+				t.start();
+
+			}
+			/* Context case */
+			else {
+				idparam = p.getAnnotation(Context.class).value();
+				args[i] = context.get(idparam);
+			}
+			i++;
+			
+			try {
+				for (Thread t : threads) {
+					t.join();
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		try {
+			invokeRes = m.invoke(j, args);
+			res.put(idTask, invokeRes);
+			return invokeRes;
+		} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
+			e.printStackTrace();
+		} 
+		return null;
+	}
+
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=ProjetSRCS/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.rmi(Remote.class[Remote" modifiers="1537" timestamp="1596417416000"/>
+<typeInfo handle="=ProjetSRCS/src&lt;srcs.workflow.server.distributed{JobExecutorMasterRemote.java[JobExecutorMasterRemote" modifiers="513" timestamp="1590573987021"/>
+<typeInfo handle="=ProjetSRCS/src&lt;srcs.workflow.server.distributed{TaskExecutorRemote.java[TaskExecutorRemote" modifiers="513" timestamp="1590574105449"/>
+</typeInfoHistroy>

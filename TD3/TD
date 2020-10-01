@@ -1,0 +1,110 @@
+Exercice 1
+==========
+
+1/
+accept()
+
+2/
+Socket socket = ...
+InputStream is = socket.getInputStream();
+is.read();
+
+3/
+OutputSteam os = socket.getOutputSteam();
+os.write(...);
+
+4/
+GET retourne les données produites par un processus producteur,
+spécifié par Request-URI.
+
+5/
+
+Requete:
+
+GET /index.html HTTP/1.0
+User-Agent : Mozilla 1.4 /* optionnel */
+<ligne vide>
+<CONTENU>
+
+Réponse correcte:
+
+HTTP/1.0 200 OK
+Content-type:text/html
+Content-length:<taille en octet>
+<ligne vide>
+<html> .... </html>
+
+Réponse erreur:
+
+HTTP/1.0 404 NotFound
+<ligne vide>
+<html> .... </html>
+
+6/
+Serveur:
+
+Ouvrir une socket d'écoute
+while (true) {
+  Écouter la socket
+  Lire la 1ère ligne
+  S'assurer que le format est respecté
+    Sinon envoyer 400 Bad request
+  Lire les en-têtes
+  Si (fichier existe) {
+    Envoyer (HTTP/1.0 200 OK)
+    Envoyer (Count-type:text/html)
+    Envoyer (Content-length:fichier.length)
+    Envoyer (LIGNEVIDE)
+    Envoyer contenu du fichier
+  } Sinon {
+    Envoyer (HTTP/1.0 404 NotFound)
+    Envoyer (LIGNEVIDE)
+    Envoyer (message)
+  }
+}
+
+7/
+
+Ouvrir une socket d'écoute
+while (true) {
+  Écouter la socket
+  Lire la 1ère ligne
+  S'assurer que le format est respecté
+    Sinon envoyer 400 Bad request
+  Lire les en-têtes
+
+  Prendre connaissance de la taille
+  Créer ou écraser le fichier
+  Écrire le fichier
+  Envoyer (HTTP/1.0 200 OK)
+  Envoyer (en-têtes)
+}
+
+8/
+Ouvrir une socket de connexion sur le port du serveur
+envoyer (PUT /monfichier.txt HTTP/1.1)
+envoyer (entête)
+envoyer (LIGNEVIDE)
+envoyer (contenu du fichier)
+Attendre la réponse
+
+Exercice 2
+==========
+
+1/
+Réponse OK : resp <nombre>
+Message : operation <operateur> <nb1> <nb2>
+
+2/
+Requête mal formée :
+  - Mauvais type de message
+  - Opération inconnue
+  - <nb1> et/ou <nb2> ne sont pas des nombres
+  - Il manque une opérande
+Division par 0
+
+4/
+Sans état : les messages de requete n'ont aucune dépendance
+entre eux
+
+Avec état : on impose une séquence dans les messages des requêtes

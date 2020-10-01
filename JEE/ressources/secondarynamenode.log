@@ -1,0 +1,591 @@
+2016-09-04 23:16:06,832 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2016-09-04 23:16:06,841 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-09-04 23:16:07,427 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-09-04 23:16:07,524 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-09-04 23:16:07,525 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2016-09-04 23:16:07,692 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /tmp/hadoop-jlejeune/dfs/namesecondary/in_use.lock acquired by nodename 2868@vm-ubuntu
+2016-09-04 23:16:07,694 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2016-09-04 23:16:07,695 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2016-09-04 23:16:07,735 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2016-09-04 23:16:07,735 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2016-09-04 23:16:07,737 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2016-09-04 23:16:07,738 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2016 sept. 04 23:16:07
+2016-09-04 23:16:07,751 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2016-09-04 23:16:07,751 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-09-04 23:16:07,753 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2016-09-04 23:16:07,753 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2016-09-04 23:16:07,762 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2016-09-04 23:16:07,762 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2016-09-04 23:16:07,763 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2016-09-04 23:16:07,763 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2016-09-04 23:16:07,763 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2016-09-04 23:16:07,763 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2016-09-04 23:16:07,763 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2016-09-04 23:16:07,763 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2016-09-04 23:16:07,764 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = jlejeune (auth:SIMPLE)
+2016-09-04 23:16:07,764 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2016-09-04 23:16:07,764 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2016-09-04 23:16:07,765 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2016-09-04 23:16:07,767 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2016-09-04 23:16:07,825 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2016-09-04 23:16:07,825 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-09-04 23:16:07,825 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2016-09-04 23:16:07,825 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2016-09-04 23:16:07,826 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2016-09-04 23:16:07,826 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2016-09-04 23:16:07,826 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2016-09-04 23:16:07,826 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2016-09-04 23:16:07,833 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2016-09-04 23:16:07,834 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-09-04 23:16:07,834 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2016-09-04 23:16:07,834 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2016-09-04 23:16:07,835 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2016-09-04 23:16:07,835 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2016-09-04 23:16:07,835 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2016-09-04 23:16:07,838 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2016-09-04 23:16:07,838 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2016-09-04 23:16:07,838 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2016-09-04 23:16:07,851 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2016-09-04 23:16:07,915 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-09-04 23:16:07,925 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-09-04 23:16:07,930 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2016-09-04 23:16:07,936 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-09-04 23:16:07,938 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2016-09-04 23:16:07,938 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-09-04 23:16:07,938 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-09-04 23:16:07,952 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2016-09-04 23:16:07,952 INFO org.mortbay.log: jetty-6.1.26
+2016-09-04 23:16:08,083 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2016-09-04 23:16:08,083 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2016-09-04 23:16:08,138 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2016-09-04 23:16:08,138 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2016-09-04 23:16:32,480 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2016-09-04 23:16:32,482 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+2016-09-04 23:17:37,029 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2016-09-04 23:17:37,046 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-09-04 23:17:37,925 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-09-04 23:17:38,087 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-09-04 23:17:38,087 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2016-09-04 23:17:38,383 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /tmp/hadoop-jlejeune/dfs/namesecondary/in_use.lock acquired by nodename 5008@vm-ubuntu
+2016-09-04 23:17:38,389 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2016-09-04 23:17:38,390 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2016-09-04 23:17:38,465 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2016-09-04 23:17:38,465 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2016-09-04 23:17:38,467 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2016-09-04 23:17:38,470 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2016 sept. 04 23:17:38
+2016-09-04 23:17:38,480 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2016-09-04 23:17:38,481 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-09-04 23:17:38,483 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2016-09-04 23:17:38,483 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2016-09-04 23:17:38,498 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2016-09-04 23:17:38,499 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2016-09-04 23:17:38,499 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2016-09-04 23:17:38,499 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2016-09-04 23:17:38,499 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2016-09-04 23:17:38,499 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2016-09-04 23:17:38,499 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2016-09-04 23:17:38,499 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2016-09-04 23:17:38,502 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = jlejeune (auth:SIMPLE)
+2016-09-04 23:17:38,502 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2016-09-04 23:17:38,503 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2016-09-04 23:17:38,503 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2016-09-04 23:17:38,506 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2016-09-04 23:17:38,601 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2016-09-04 23:17:38,602 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-09-04 23:17:38,602 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2016-09-04 23:17:38,602 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2016-09-04 23:17:38,604 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2016-09-04 23:17:38,604 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2016-09-04 23:17:38,605 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2016-09-04 23:17:38,605 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2016-09-04 23:17:38,623 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2016-09-04 23:17:38,623 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-09-04 23:17:38,623 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2016-09-04 23:17:38,623 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2016-09-04 23:17:38,626 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2016-09-04 23:17:38,626 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2016-09-04 23:17:38,626 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2016-09-04 23:17:38,631 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2016-09-04 23:17:38,631 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2016-09-04 23:17:38,631 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2016-09-04 23:17:38,653 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2016-09-04 23:17:38,768 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-09-04 23:17:38,782 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-09-04 23:17:38,788 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2016-09-04 23:17:38,808 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-09-04 23:17:38,812 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2016-09-04 23:17:38,812 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-09-04 23:17:38,812 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-09-04 23:17:38,835 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2016-09-04 23:17:38,835 INFO org.mortbay.log: jetty-6.1.26
+2016-09-04 23:17:39,011 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2016-09-04 23:17:39,012 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2016-09-04 23:17:39,049 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2016-09-04 23:17:39,049 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2016-09-04 23:18:21,979 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2016-09-04 23:18:21,981 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+2016-10-13 11:38:05,241 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2016-10-13 11:38:05,251 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-10-13 11:38:05,756 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-10-13 11:38:05,834 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-10-13 11:38:05,834 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2016-10-13 11:38:05,993 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /tmp/hadoop-jlejeune/dfs/namesecondary/in_use.lock acquired by nodename 4147@vm-ubuntu
+2016-10-13 11:38:05,996 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2016-10-13 11:38:05,996 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2016-10-13 11:38:06,033 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2016-10-13 11:38:06,033 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2016-10-13 11:38:06,034 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2016-10-13 11:38:06,036 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2016 oct. 13 11:38:06
+2016-10-13 11:38:06,037 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2016-10-13 11:38:06,037 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-10-13 11:38:06,039 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2016-10-13 11:38:06,039 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2016-10-13 11:38:06,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2016-10-13 11:38:06,074 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2016-10-13 11:38:06,074 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2016-10-13 11:38:06,074 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2016-10-13 11:38:06,074 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2016-10-13 11:38:06,074 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2016-10-13 11:38:06,074 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2016-10-13 11:38:06,074 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2016-10-13 11:38:06,076 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = jlejeune (auth:SIMPLE)
+2016-10-13 11:38:06,076 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2016-10-13 11:38:06,076 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2016-10-13 11:38:06,076 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2016-10-13 11:38:06,078 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2016-10-13 11:38:06,137 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2016-10-13 11:38:06,137 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-10-13 11:38:06,137 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2016-10-13 11:38:06,138 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2016-10-13 11:38:06,138 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2016-10-13 11:38:06,138 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2016-10-13 11:38:06,138 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2016-10-13 11:38:06,139 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2016-10-13 11:38:06,146 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2016-10-13 11:38:06,146 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-10-13 11:38:06,146 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2016-10-13 11:38:06,146 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2016-10-13 11:38:06,148 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2016-10-13 11:38:06,148 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2016-10-13 11:38:06,148 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2016-10-13 11:38:06,151 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2016-10-13 11:38:06,151 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2016-10-13 11:38:06,151 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2016-10-13 11:38:06,162 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2016-10-13 11:38:06,221 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-10-13 11:38:06,229 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-10-13 11:38:06,236 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2016-10-13 11:38:06,242 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-10-13 11:38:06,244 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2016-10-13 11:38:06,244 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-10-13 11:38:06,244 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-10-13 11:38:06,257 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2016-10-13 11:38:06,257 INFO org.mortbay.log: jetty-6.1.26
+2016-10-13 11:38:06,380 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2016-10-13 11:38:06,380 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2016-10-13 11:38:06,387 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2016-10-13 11:38:06,387 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2016-10-13 12:07:07,145 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2016-10-13 12:07:07,518 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getimage=1&txid=0&storageInfo=-63:1179288442:0:CID-c811ca90-0eee-44f2-b509-cffb705c50db
+2016-10-13 12:07:07,545 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2016-10-13 12:07:07,956 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,04s at 0,00 KB/s
+2016-10-13 12:07:07,956 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000000 size 355 bytes.
+2016-10-13 12:07:07,962 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=1&endTxId=38&storageInfo=-63:1179288442:0:CID-c811ca90-0eee-44f2-b509-cffb705c50db
+2016-10-13 12:07:07,975 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,01s at 444,44 KB/s
+2016-10-13 12:07:07,975 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000001-0000000000000000038_0000000000003620324 size 0 bytes.
+2016-10-13 12:07:08,028 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 1 INodes.
+2016-10-13 12:07:08,060 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2016-10-13 12:07:08,060 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 0 from /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000000
+2016-10-13 12:07:08,060 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2016-10-13 12:07:08,068 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-10-13 12:07:08,075 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000038 expecting start txid #1
+2016-10-13 12:07:08,076 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000038
+2016-10-13 12:07:08,134 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000038 of size 4387 edits # 38 loaded in 0 seconds
+2016-10-13 12:07:08,141 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000038 using no compression
+2016-10-13 12:07:08,179 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000038 of size 1048 bytes saved in 0 seconds.
+2016-10-13 12:07:08,183 INFO org.apache.hadoop.hdfs.server.namenode.FSImageTransactionalStorageInspector: No version file in /tmp/hadoop-jlejeune/dfs/namesecondary
+2016-10-13 12:07:08,239 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 38 to namenode at http://localhost:50070 in 0.047 seconds
+2016-10-13 12:07:08,239 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1048
+2016-10-13 12:44:50,477 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2016-10-13 12:44:50,480 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+2016-11-25 15:28:42,607 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2016-11-25 15:28:42,621 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-11-25 15:28:43,236 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-11-25 15:28:43,326 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-11-25 15:28:43,326 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2016-11-25 15:28:43,499 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /tmp/hadoop-jlejeune/dfs/namesecondary/in_use.lock acquired by nodename 15140@vm-ubuntu
+2016-11-25 15:28:43,502 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2016-11-25 15:28:43,502 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2016-11-25 15:28:43,540 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2016-11-25 15:28:43,541 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2016-11-25 15:28:43,542 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2016-11-25 15:28:43,543 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2016 nov. 25 15:28:43
+2016-11-25 15:28:43,545 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2016-11-25 15:28:43,545 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-11-25 15:28:43,547 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2016-11-25 15:28:43,547 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2016-11-25 15:28:43,569 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2016-11-25 15:28:43,569 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2016-11-25 15:28:43,569 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2016-11-25 15:28:43,569 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2016-11-25 15:28:43,570 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2016-11-25 15:28:43,570 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2016-11-25 15:28:43,570 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2016-11-25 15:28:43,570 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2016-11-25 15:28:43,571 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = jlejeune (auth:SIMPLE)
+2016-11-25 15:28:43,571 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2016-11-25 15:28:43,571 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2016-11-25 15:28:43,572 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2016-11-25 15:28:43,573 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2016-11-25 15:28:43,635 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2016-11-25 15:28:43,635 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-11-25 15:28:43,635 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2016-11-25 15:28:43,636 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2016-11-25 15:28:43,636 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2016-11-25 15:28:43,636 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2016-11-25 15:28:43,636 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2016-11-25 15:28:43,636 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2016-11-25 15:28:43,646 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2016-11-25 15:28:43,646 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-11-25 15:28:43,646 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2016-11-25 15:28:43,646 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2016-11-25 15:28:43,649 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2016-11-25 15:28:43,649 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2016-11-25 15:28:43,649 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2016-11-25 15:28:43,652 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2016-11-25 15:28:43,652 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2016-11-25 15:28:43,652 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2016-11-25 15:28:43,673 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2016-11-25 15:28:43,738 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-11-25 15:28:43,747 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-11-25 15:28:43,753 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2016-11-25 15:28:43,758 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-11-25 15:28:43,761 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2016-11-25 15:28:43,762 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-11-25 15:28:43,762 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-11-25 15:28:43,777 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2016-11-25 15:28:43,777 INFO org.mortbay.log: jetty-6.1.26
+2016-11-25 15:28:43,918 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2016-11-25 15:28:43,918 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2016-11-25 15:28:43,920 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2016-11-25 15:28:43,920 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2016-11-25 15:29:44,102 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2016-11-25 15:29:44,484 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getimage=1&txid=0&storageInfo=-63:1071188204:0:CID-f0591f95-6a9a-4044-bc2f-55b5c26455bf
+2016-11-25 15:29:44,517 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2016-11-25 15:29:44,911 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,05s at 0,00 KB/s
+2016-11-25 15:29:44,915 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000000 size 355 bytes.
+2016-11-25 15:29:44,930 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=1&endTxId=8&storageInfo=-63:1071188204:0:CID-f0591f95-6a9a-4044-bc2f-55b5c26455bf
+2016-11-25 15:29:44,937 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,00s at 0,00 KB/s
+2016-11-25 15:29:44,937 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000001-0000000000000000008_0000000000022667335 size 0 bytes.
+2016-11-25 15:29:45,004 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 1 INodes.
+2016-11-25 15:29:45,047 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2016-11-25 15:29:45,048 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 0 from /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000000
+2016-11-25 15:29:45,048 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2016-11-25 15:29:45,054 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-11-25 15:29:45,060 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000008 expecting start txid #1
+2016-11-25 15:29:45,060 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000008
+2016-11-25 15:29:45,135 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000008 of size 515 edits # 8 loaded in 0 seconds
+2016-11-25 15:29:45,140 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000008 using no compression
+2016-11-25 15:29:45,234 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000008 of size 441 bytes saved in 0 seconds.
+2016-11-25 15:29:45,243 INFO org.apache.hadoop.hdfs.server.namenode.FSImageTransactionalStorageInspector: No version file in /tmp/hadoop-jlejeune/dfs/namesecondary
+2016-11-25 15:29:45,383 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 8 to namenode at http://localhost:50070 in 0.13 seconds
+2016-11-25 15:29:45,383 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 441
+2016-11-25 16:21:14,757 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2016-11-25 16:21:14,759 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+2016-11-30 10:59:02,042 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2016-11-30 10:59:02,053 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-11-30 10:59:02,606 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-11-30 10:59:02,664 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-11-30 10:59:02,664 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2016-11-30 10:59:02,823 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /tmp/hadoop-jlejeune/dfs/namesecondary/in_use.lock acquired by nodename 3795@vm-ubuntu
+2016-11-30 10:59:02,826 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2016-11-30 10:59:02,826 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2016-11-30 10:59:02,862 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2016-11-30 10:59:02,862 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2016-11-30 10:59:02,863 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2016-11-30 10:59:02,864 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2016 nov. 30 10:59:02
+2016-11-30 10:59:02,866 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2016-11-30 10:59:02,866 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-11-30 10:59:02,867 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2016-11-30 10:59:02,868 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2016-11-30 10:59:02,889 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2016-11-30 10:59:02,890 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2016-11-30 10:59:02,890 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2016-11-30 10:59:02,890 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2016-11-30 10:59:02,890 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2016-11-30 10:59:02,890 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2016-11-30 10:59:02,890 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2016-11-30 10:59:02,890 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2016-11-30 10:59:02,892 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = jlejeune (auth:SIMPLE)
+2016-11-30 10:59:02,892 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2016-11-30 10:59:02,892 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2016-11-30 10:59:02,892 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2016-11-30 10:59:02,894 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2016-11-30 10:59:02,941 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2016-11-30 10:59:02,942 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-11-30 10:59:02,942 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2016-11-30 10:59:02,942 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2016-11-30 10:59:02,942 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2016-11-30 10:59:02,942 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2016-11-30 10:59:02,943 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2016-11-30 10:59:02,943 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2016-11-30 10:59:02,949 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2016-11-30 10:59:02,950 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-11-30 10:59:02,950 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2016-11-30 10:59:02,950 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2016-11-30 10:59:02,951 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2016-11-30 10:59:02,951 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2016-11-30 10:59:02,951 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2016-11-30 10:59:02,954 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2016-11-30 10:59:02,954 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2016-11-30 10:59:02,954 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2016-11-30 10:59:02,965 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2016-11-30 10:59:03,066 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-11-30 10:59:03,075 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-11-30 10:59:03,081 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2016-11-30 10:59:03,089 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-11-30 10:59:03,091 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2016-11-30 10:59:03,091 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-11-30 10:59:03,092 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-11-30 10:59:03,110 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2016-11-30 10:59:03,110 INFO org.mortbay.log: jetty-6.1.26
+2016-11-30 10:59:03,237 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2016-11-30 10:59:03,237 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2016-11-30 10:59:03,239 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2016-11-30 10:59:03,239 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2016-11-30 11:17:03,653 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2016-11-30 11:17:03,992 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getimage=1&txid=0&storageInfo=-63:1400059357:0:CID-c71d53ba-4eda-4011-ba6d-d7163526e197
+2016-11-30 11:17:04,023 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2016-11-30 11:17:04,387 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,05s at 0,00 KB/s
+2016-11-30 11:17:04,388 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000000 size 355 bytes.
+2016-11-30 11:17:04,401 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=1&endTxId=101&storageInfo=-63:1400059357:0:CID-c71d53ba-4eda-4011-ba6d-d7163526e197
+2016-11-30 11:17:04,407 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,00s at 10000,00 KB/s
+2016-11-30 11:17:04,407 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000001-0000000000000000101_0000000000003637681 size 0 bytes.
+2016-11-30 11:17:04,478 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 1 INodes.
+2016-11-30 11:17:04,533 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2016-11-30 11:17:04,533 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 0 from /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000000
+2016-11-30 11:17:04,533 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2016-11-30 11:17:04,538 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-11-30 11:17:04,542 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000101 expecting start txid #1
+2016-11-30 11:17:04,542 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000101
+2016-11-30 11:17:04,627 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000101 of size 11181 edits # 101 loaded in 0 seconds
+2016-11-30 11:17:04,636 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000101 using no compression
+2016-11-30 11:17:04,689 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000101 of size 3481 bytes saved in 0 seconds.
+2016-11-30 11:17:04,695 INFO org.apache.hadoop.hdfs.server.namenode.FSImageTransactionalStorageInspector: No version file in /tmp/hadoop-jlejeune/dfs/namesecondary
+2016-11-30 11:17:04,733 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 101 to namenode at http://localhost:50070 in 0.028 seconds
+2016-11-30 11:17:04,734 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3481
+2016-11-30 12:17:05,518 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2016-11-30 12:17:05,534 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=102&endTxId=129&storageInfo=-63:1400059357:0:CID-c71d53ba-4eda-4011-ba6d-d7163526e197
+2016-11-30 12:17:05,540 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,00s at 3000,00 KB/s
+2016-11-30 12:17:05,540 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000102-0000000000000000129_0000000000007238814 size 0 bytes.
+2016-11-30 12:17:05,541 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-11-30 12:17:05,541 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000102-0000000000000000129 expecting start txid #102
+2016-11-30 12:17:05,541 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000102-0000000000000000129
+2016-11-30 12:17:05,547 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000102-0000000000000000129 of size 3393 edits # 28 loaded in 0 seconds
+2016-11-30 12:17:05,552 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000129 using no compression
+2016-11-30 12:17:05,564 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000129 of size 3482 bytes saved in 0 seconds.
+2016-11-30 12:17:05,575 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 101
+2016-11-30 12:17:05,576 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2016-11-30 12:17:05,595 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 129 to namenode at http://localhost:50070 in 0.012 seconds
+2016-11-30 12:17:05,595 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3482
+2016-11-30 13:17:06,337 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2016-11-30 13:17:06,338 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=130&endTxId=157&storageInfo=-63:1400059357:0:CID-c71d53ba-4eda-4011-ba6d-d7163526e197
+2016-11-30 13:17:06,345 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,00s at 1500,00 KB/s
+2016-11-30 13:17:06,345 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000130-0000000000000000157_0000000000010839618 size 0 bytes.
+2016-11-30 13:17:06,346 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-11-30 13:17:06,346 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000130-0000000000000000157 expecting start txid #130
+2016-11-30 13:17:06,347 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000130-0000000000000000157
+2016-11-30 13:17:06,352 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000130-0000000000000000157 of size 3393 edits # 28 loaded in 0 seconds
+2016-11-30 13:17:06,353 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000157 using no compression
+2016-11-30 13:17:06,358 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000157 of size 3482 bytes saved in 0 seconds.
+2016-11-30 13:17:06,361 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 129
+2016-11-30 13:17:06,361 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000101, cpktTxId=0000000000000000101)
+2016-11-30 13:17:06,374 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 157 to namenode at http://localhost:50070 in 0.011 seconds
+2016-11-30 13:17:06,374 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3482
+2016-11-30 13:44:27,818 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2016-11-30 13:44:27,820 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+2016-12-01 11:39:16,096 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2016-12-01 11:39:16,106 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-12-01 11:39:16,645 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-12-01 11:39:16,723 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-12-01 11:39:16,723 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2016-12-01 11:39:16,900 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /tmp/hadoop-jlejeune/dfs/namesecondary/in_use.lock acquired by nodename 3656@vm-ubuntu
+2016-12-01 11:39:16,903 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2016-12-01 11:39:16,903 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2016-12-01 11:39:16,940 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2016-12-01 11:39:16,940 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2016-12-01 11:39:16,942 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2016-12-01 11:39:16,943 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2016 déc. 01 11:39:16
+2016-12-01 11:39:16,945 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2016-12-01 11:39:16,945 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-12-01 11:39:16,947 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2016-12-01 11:39:16,947 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2016-12-01 11:39:16,973 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2016-12-01 11:39:16,973 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2016-12-01 11:39:16,973 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2016-12-01 11:39:16,973 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2016-12-01 11:39:16,973 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2016-12-01 11:39:16,973 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2016-12-01 11:39:16,973 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2016-12-01 11:39:16,973 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2016-12-01 11:39:16,975 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = jlejeune (auth:SIMPLE)
+2016-12-01 11:39:16,975 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2016-12-01 11:39:16,975 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2016-12-01 11:39:16,976 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2016-12-01 11:39:16,978 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2016-12-01 11:39:17,055 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2016-12-01 11:39:17,055 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-12-01 11:39:17,055 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2016-12-01 11:39:17,055 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2016-12-01 11:39:17,056 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2016-12-01 11:39:17,056 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2016-12-01 11:39:17,056 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2016-12-01 11:39:17,056 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2016-12-01 11:39:17,063 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2016-12-01 11:39:17,063 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-12-01 11:39:17,064 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2016-12-01 11:39:17,064 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2016-12-01 11:39:17,065 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2016-12-01 11:39:17,065 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2016-12-01 11:39:17,065 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2016-12-01 11:39:17,069 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2016-12-01 11:39:17,069 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2016-12-01 11:39:17,069 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2016-12-01 11:39:17,081 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2016-12-01 11:39:17,146 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-12-01 11:39:17,156 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2016-12-01 11:39:17,161 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2016-12-01 11:39:17,167 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-12-01 11:39:17,170 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2016-12-01 11:39:17,170 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-12-01 11:39:17,170 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-12-01 11:39:17,193 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2016-12-01 11:39:17,193 INFO org.mortbay.log: jetty-6.1.26
+2016-12-01 11:39:17,335 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2016-12-01 11:39:17,336 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2016-12-01 11:39:17,337 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2016-12-01 11:39:17,338 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2016-12-01 11:40:17,501 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2016-12-01 11:40:17,895 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getimage=1&txid=0&storageInfo=-63:124849798:0:CID-793d393b-7cf0-49cf-bc01-fc677d42c2a2
+2016-12-01 11:40:18,001 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2016-12-01 11:40:18,918 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,13s at 0,00 KB/s
+2016-12-01 11:40:18,918 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000000 size 354 bytes.
+2016-12-01 11:40:18,940 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=1&endTxId=87&storageInfo=-63:124849798:0:CID-793d393b-7cf0-49cf-bc01-fc677d42c2a2
+2016-12-01 11:40:18,961 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,00s at 2250,00 KB/s
+2016-12-01 11:40:18,961 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000001-0000000000000000087_0000000000006697219 size 0 bytes.
+2016-12-01 11:40:19,138 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 1 INodes.
+2016-12-01 11:40:19,185 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2016-12-01 11:40:19,185 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 0 from /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000000
+2016-12-01 11:40:19,185 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2016-12-01 11:40:19,201 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-12-01 11:40:19,205 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000087 expecting start txid #1
+2016-12-01 11:40:19,205 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000087
+2016-12-01 11:40:19,274 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000087 of size 9297 edits # 87 loaded in 0 seconds
+2016-12-01 11:40:19,281 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000087 using no compression
+2016-12-01 11:40:19,347 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000087 of size 3170 bytes saved in 0 seconds.
+2016-12-01 11:40:19,357 INFO org.apache.hadoop.hdfs.server.namenode.FSImageTransactionalStorageInspector: No version file in /tmp/hadoop-jlejeune/dfs/namesecondary
+2016-12-01 11:40:19,408 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 87 to namenode at http://localhost:50070 in 0.042 seconds
+2016-12-01 11:40:19,409 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3170
+2016-12-01 12:40:20,218 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2016-12-01 12:40:20,219 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=88&endTxId=125&storageInfo=-63:124849798:0:CID-793d393b-7cf0-49cf-bc01-fc677d42c2a2
+2016-12-01 12:40:20,249 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,01s at 571,43 KB/s
+2016-12-01 12:40:20,249 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000088-0000000000000000125_0000000000010298503 size 0 bytes.
+2016-12-01 12:40:20,250 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-12-01 12:40:20,250 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000088-0000000000000000125 expecting start txid #88
+2016-12-01 12:40:20,250 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000088-0000000000000000125
+2016-12-01 12:40:20,285 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000088-0000000000000000125 of size 4797 edits # 38 loaded in 0 seconds
+2016-12-01 12:40:20,288 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000125 using no compression
+2016-12-01 12:40:20,297 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000125 of size 3720 bytes saved in 0 seconds.
+2016-12-01 12:40:20,305 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 87
+2016-12-01 12:40:20,305 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2016-12-01 12:40:20,327 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 125 to namenode at http://localhost:50070 in 0.015 seconds
+2016-12-01 12:40:20,327 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3720
+2016-12-01 13:40:21,217 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2016-12-01 13:40:21,221 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=126&endTxId=253&storageInfo=-63:124849798:0:CID-793d393b-7cf0-49cf-bc01-fc677d42c2a2
+2016-12-01 13:40:21,286 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,01s at 2500,00 KB/s
+2016-12-01 13:40:21,286 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000126-0000000000000000253_0000000000013899506 size 0 bytes.
+2016-12-01 13:40:21,290 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-12-01 13:40:21,294 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000126-0000000000000000253 expecting start txid #126
+2016-12-01 13:40:21,299 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000126-0000000000000000253
+2016-12-01 13:40:21,409 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000126-0000000000000000253 of size 15500 edits # 128 loaded in 0 seconds
+2016-12-01 13:40:21,416 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000253 using no compression
+2016-12-01 13:40:21,472 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000253 of size 4114 bytes saved in 0 seconds.
+2016-12-01 13:40:21,481 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 125
+2016-12-01 13:40:21,481 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000087, cpktTxId=0000000000000000087)
+2016-12-01 13:40:21,523 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 253 to namenode at http://localhost:50070 in 0.03 seconds
+2016-12-01 13:40:21,524 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 4114
+2016-12-01 14:40:22,633 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2016-12-01 14:40:22,635 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=254&endTxId=279&storageInfo=-63:124849798:0:CID-793d393b-7cf0-49cf-bc01-fc677d42c2a2
+2016-12-01 14:40:22,651 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,01s at 600,00 KB/s
+2016-12-01 14:40:22,651 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000254-0000000000000000279_0000000000017500919 size 0 bytes.
+2016-12-01 14:40:22,654 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-12-01 14:40:22,654 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000254-0000000000000000279 expecting start txid #254
+2016-12-01 14:40:22,655 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000254-0000000000000000279
+2016-12-01 14:40:22,665 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000254-0000000000000000279 of size 3155 edits # 26 loaded in 0 seconds
+2016-12-01 14:40:22,670 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000279 using no compression
+2016-12-01 14:40:22,705 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000279 of size 4114 bytes saved in 0 seconds.
+2016-12-01 14:40:22,714 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 253
+2016-12-01 14:40:22,714 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000125, cpktTxId=0000000000000000125)
+2016-12-01 14:40:22,744 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 279 to namenode at http://localhost:50070 in 0.025 seconds
+2016-12-01 14:40:22,744 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 4114
+2016-12-01 15:40:23,678 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2016-12-01 15:40:23,682 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/imagetransfer?getedit=1&startTxId=280&endTxId=451&storageInfo=-63:124849798:0:CID-793d393b-7cf0-49cf-bc01-fc677d42c2a2
+2016-12-01 15:40:23,733 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0,01s at 1571,43 KB/s
+2016-12-01 15:40:23,733 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000280-0000000000000000451_0000000000021101967 size 0 bytes.
+2016-12-01 15:40:23,744 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2016-12-01 15:40:23,745 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000280-0000000000000000451 expecting start txid #280
+2016-12-01 15:40:23,747 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000280-0000000000000000451
+2016-12-01 15:40:24,067 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-jlejeune/dfs/namesecondary/current/edits_0000000000000000280-0000000000000000451 of size 22968 edits # 172 loaded in 0 seconds
+2016-12-01 15:40:24,080 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000451 using no compression
+2016-12-01 15:40:24,182 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage.ckpt_0000000000000000451 of size 4207 bytes saved in 0 seconds.
+2016-12-01 15:40:24,210 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 279
+2016-12-01 15:40:24,210 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/tmp/hadoop-jlejeune/dfs/namesecondary/current/fsimage_0000000000000000253, cpktTxId=0000000000000000253)
+2016-12-01 15:40:24,269 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 451 to namenode at http://localhost:50070 in 0.044 seconds
+2016-12-01 15:40:24,269 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 4207
+2016-12-01 16:11:32,156 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2016-12-01 16:11:32,361 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+2016-12-01 16:12:24,861 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2016-12-01 16:12:24,872 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2016-12-01 16:12:25,559 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-12-01 16:12:25,668 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-12-01 16:12:25,668 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2016-12-01 16:12:25,906 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /tmp/hadoop-jlejeune/dfs/namesecondary/in_use.lock acquired by nodename 21201@vm-ubuntu
+2016-12-01 16:12:25,995 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2016-12-01 16:12:25,995 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2016-12-01 16:12:26,041 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2016-12-01 16:12:26,041 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2016-12-01 16:12:26,043 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2016-12-01 16:12:26,045 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2016 déc. 01 16:12:26
+2016-12-01 16:12:26,047 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2016-12-01 16:12:26,047 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-12-01 16:12:26,049 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2016-12-01 16:12:26,049 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2016-12-01 16:12:26,059 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2016-12-01 16:12:26,059 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2016-12-01 16:12:26,059 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2016-12-01 16:12:26,059 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2016-12-01 16:12:26,059 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2016-12-01 16:12:26,059 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2016-12-01 16:12:26,059 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2016-12-01 16:12:26,059 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2016-12-01 16:12:26,065 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = jlejeune (auth:SIMPLE)
+2016-12-01 16:12:26,065 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2016-12-01 16:12:26,065 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2016-12-01 16:12:26,065 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2016-12-01 16:12:26,069 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2016-12-01 16:12:26,155 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2016-12-01 16:12:26,155 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-12-01 16:12:26,155 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2016-12-01 16:12:26,155 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2016-12-01 16:12:26,156 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2016-12-01 16:12:26,156 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2016-12-01 16:12:26,156 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2016-12-01 16:12:26,156 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2016-12-01 16:12:26,163 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2016-12-01 16:12:26,164 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2016-12-01 16:12:26,164 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2016-12-01 16:12:26,165 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2016-12-01 16:12:26,167 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2016-12-01 16:12:26,167 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2016-12-01 16:12:26,167 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2016-12-01 16:12:26,171 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10

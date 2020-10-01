@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		List<Integer>	numeros		= new ArrayList<>();
+		List<Integer>	etoiles		= new ArrayList<>();
+
+		List<Integer>	mesnumeros	= new ArrayList<>();
+		List<Integer>	mestoiles	= new ArrayList<>();
+
+	}
+
+}

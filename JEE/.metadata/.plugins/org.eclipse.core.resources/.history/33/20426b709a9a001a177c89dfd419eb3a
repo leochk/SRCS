@@ -1,0 +1,16 @@
+package srcs.workflow.server.central;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+import srcs.workflow.executor.JobExecutor;
+import srcs.workflow.job.Job;
+
+public class JobExecutorRemoteCentral extends JobExecutor implements Remote {
+
+	public JobExecutorRemoteCentral(Job job) throws RemoteException	{
+		super(job);
+		// TODO Auto-generated constructor stub
+	}
+
+}

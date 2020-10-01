@@ -1,0 +1,13 @@
+package srcs.workflow.server.central;
+
+import java.io.PrintStream;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.util.Map;
+
+import srcs.workflow.job.Job;
+
+public interface JobExecutorBuilderRemote extends Remote {
+	void setJob(Job j) throws RemoteException;
+	Map<String, Object> execute(PrintStream p) throws RemoteException;
+}

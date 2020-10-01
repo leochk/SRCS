@@ -1,0 +1,95 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
+
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
+
+public class Main {
+
+	private static final int	MAX_NUMERO	= 5;
+	private static final int	MAX_ETOILE	= 2;
+
+	public static void main(String[] args) {
+
+		List<Integer>	numeros		= new ArrayList<>();
+		List<Integer>	etoiles		= new ArrayList<>();
+		List<Integer>	mesnumeros	= new ArrayList<>();
+		List<Integer>	mesetoiles	= new ArrayList<>();
+		int cpt = 0;
+		
+		tirage(numeros, etoiles, mesnumeros, mesetoiles);
+		
+		while (!check(numeros, etoiles, mesnumeros, mesetoiles)) {
+			cpt++;
+			tirage(numeros, etoiles, mesnumeros, mesetoiles);
+			System.out.println(cpt);
+
+		}
+
+		numeros = numeros.stream().sorted().collect(Collectors.toList());
+		mesnumeros = mesnumeros.stream().sorted().collect(Collectors.toList());
+		etoiles = etoiles.stream().sorted().collect(Collectors.toList());
+		mesetoiles = mesetoiles.stream().sorted().collect(Collectors.toList());
+		System.out.println(cpt);
+
+		System.out.println(numeros.toString());
+		System.out.println(mesnumeros.toString());
+		System.out.println(etoiles.toString());
+		System.out.println(mesetoiles.toString());
+
+	}
+
+	public static boolean check(List<Integer> numeros, List<Integer> etoiles,
+			List<Integer> mesnumeros, List<Integer> mesetoiles) {
+
+		for (Integer x : numeros)
+			if (!mesnumeros.contains(x))
+				return false;
+		for (Integer x : etoiles)
+			if (!mesetoiles.contains(x))
+				return false;
+		return true;
+	}
+
+	public static void tirage(List<Integer> numeros, List<Integer> etoiles,
+			List<Integer> mesnumeros, List<Integer> mesetoiles) {
+
+		Random	r	= new Random();
+		Integer	n;
+		int		i;
+
+		for (i = 0; i < MAX_NUMERO; i++) {
+			n = ThreadLocalRandom.current().nextInt(1, 50);
+			if (numeros.contains(n))
+				i--;
+			else
+				numeros.add(n);
+		}
+
+		for (i = 0; i < MAX_NUMERO; i++) {
+			n = ThreadLocalRandom.current().nextInt(1, 50);
+			if (mesnumeros.contains(n))
+				i--;
+			else
+				mesnumeros.add(n);
+		}
+
+		for (i = 0; i < MAX_ETOILE; i++) {
+			n = ThreadLocalRandom.current().nextInt(1, 12);
+			if (etoiles.contains(n))
+				i--;
+			else
+				etoiles.add(n);
+		}
+
+		for (i = 0; i < MAX_ETOILE; i++) {
+			n = ThreadLocalRandom.current().nextInt(1, 12);
+			if (mesetoiles.contains(n))
+				i--;
+			else
+				mesetoiles.add(n);
+		}
+	}
+}

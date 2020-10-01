@@ -1,0 +1,30 @@
+/* AUTOMATICALLY GENERATED ON Thu May 07 14:18:32 CEST 2020*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "DRH", "tu_es_vire,Remote,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "list_personnel,Remote,";
+  permission javax.security.jacc.EJBMethodPermission "Counter", "getValue,Local,";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "getSalaire,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "tu_es_vire,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "Counter", "decrement,Local,";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "getSalaire,Remote,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "promotion,Local,java.lang.String,double";
+  permission javax.security.jacc.EJBMethodPermission "Counter", "increment,Local,";
+  permission javax.security.jacc.EJBMethodPermission "Counter", "increment,Remote,";
+  permission javax.security.jacc.EJBMethodPermission "SayHello", "hello,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "recrutement,Remote,java.lang.String,double";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "recrutement,Local,java.lang.String,double";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "list_personnel,Local,";
+  permission javax.security.jacc.EJBMethodPermission "SayHello", "hello,Remote,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "Counter", "decrement,Remote,";
+  permission javax.security.jacc.EJBMethodPermission "Counter", "getValue,Remote,";
+  permission javax.security.jacc.EJBMethodPermission "DRH", "promotion,Remote,java.lang.String,double";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "SayHello", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "Counter", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "DRH", "**";
+};
+
